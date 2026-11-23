@@ -33,10 +33,11 @@ and `shape_ratio_at` give the model's values within 0.01°.
 
 | Check | Result |
 |---|---|
-| Outline vs canvas (every 2 mm) | max 0.68 mm (triangles), 0.39 mm (LampWall) |
-| Drawn ribs vs model ribs, every 10 mm (15 traced ribs, 190 checkpoints) | mean 0.78 mm, 74 % within 1 mm, worst 4.5 mm |
-| Twist | 0° → 89.1° (close to the hand-tuned 87° in `FulLTextureLamp/prave vrednost bezier.txt`) |
-| Lobe depth k(z) at z = 0/38/76/114/152/190 | 0.223 / 0.204 / 0.210 / 0.206 / 0.248 / 0.211 |
+| **Active fit** | **joint fit to both drawings** (`fit_ribs_result.json`; front-only kept as `fit_ribs_result_front_only.json`) |
+| Outline vs front canvas (every 2 mm) | max 1.24 mm (triangles), 0.26 mm (LampWall) |
+| Drawn ribs vs model ribs, every 10 mm (15 traced ribs, 190 checkpoints) | mean 0.82 mm, 73 % within 1 mm, worst 4.3 mm |
+| Outline vs 3/4 drawing | mean 0.70 mm, max 3.3 mm |
+| Twist | 0° → 88.6° |
 
 Full per-rib table: `checkpoints_report.txt`. Picture: `checkpoints.png` (green = drawn rib, red = model rib).
 
@@ -102,7 +103,7 @@ python expected_triangles.py # images to compare with Fusion
   - rib spacing not uniform in arc length (e.g. equal angle, or denser near the creases);
   - section not exactly a rose: try `r = 1 + a·cos4θ + b·cos8θ` (one extra harmonic) fitted with the ribs;
   - more lobe-depth nodes (8–10) or a 7-point twist (tried once: tiny gain).
-- **Second view** — done, see "3/4 view check" below. Decide whether to apply the joint fit.
+- **Second view** — done and applied, see "3/4 view check" below.
 - **Verify in Fusion** with `Grasshoper_TwoTriangles` and the original drawing as canvas (not re-scaled).
   If the canvas is re-imported or re-scaled, run DumpCanvas and update `measure_canvas.py` first.
 - The 3/4 drawing shows the base slightly off the shade axis (~1.7 mm) — the base is excluded from scoring.
@@ -123,9 +124,9 @@ The drawing is a near-orthographic view from ~22° above (vertical base sides st
 | Current scripts (front-only fit) | 0.68 mm | 0.78 mm / 74 % | 1.22 / 5.66 mm |
 | Joint fit (`views/view34/joint_result.json`) | 1.23 mm | 0.82 mm / 73 % | 0.70 / 3.32 mm |
 
-The joint fit halves the 3/4 error but loosens the front outline by ~0.5 mm, so the **scripts still use the
-front-only fit**. To switch: `python views/fit_joint.py --apply` (keeps the old one as
-`fit_ribs_result_front_only.json`). Comparison picture: `views/view34/compare_current_vs_joint.png`.
+The joint fit halves the 3/4 error but loosens the front outline by ~0.5 mm. **It is now the active fit**
+(applied with `python views/fit_joint.py --apply`; the front-only fit is kept as
+`fit_ribs_result_front_only.json` — copy it back to `fit_ribs_result.json` and run `apply_ribs_fit.py` to return). Comparison picture: `views/view34/compare_current_vs_joint.png`.
 
 Ideas: weight the two views differently (`W34` in `fit_joint.py`); the two drawings may simply not be
 100 % consistent with each other (both are illustrations).

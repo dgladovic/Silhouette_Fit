@@ -99,10 +99,10 @@ def calculate_bezier_twist2(t_target):
     # --- PASTE YOUR POINTS FROM THE UI HERE ---
     twist_points = [
         [0.0000, 0.00],
-        [0.0000, -6.29],
-        [0.3951, 0.17],
-        [0.6565, 82.68],
-        [1.0000, 89.14],
+        [0.0000, -6.17],
+        [0.3965, 0.83],
+        [0.6538, 82.80],
+        [1.0000, 88.58],
     ]
     
     # Calculate the 2D Bezier curve shape internally (Look-Up Table method)
@@ -151,7 +151,7 @@ def calculate_bezier_twist2(t_target):
 
 # --- LOBE DEPTH (shape_ratio) BY HEIGHT - from fit_ribs.py (10 mm checkpoint fit) ---
 LOBE_DEPTH_Z = [0.0, 38.0, 76.0, 114.0, 152.0, 190.0]   # mm
-LOBE_DEPTH_K = [0.2227, 0.2038, 0.2097, 0.2062, 0.2478, 0.2114]
+LOBE_DEPTH_K = [0.2236, 0.2093, 0.2103, 0.1717, 0.2286, 0.2005]
 
 def shape_ratio_at(z_mm, max_height=190.0):
     zs, vs = LOBE_DEPTH_Z, LOBE_DEPTH_K
@@ -165,14 +165,14 @@ def shape_ratio_at(z_mm, max_height=190.0):
 # --- END LOBE DEPTH ---
 
 BEZIER_CONTROL_POINTS = [
-    (82.32, 0.00),  # P0
-    (114.15, 32.47),  # P1
-    (106.88, 38.35),  # P2
-    (120.84, 69.79),  # P3
-    (129.35, 97.02),  # P4
-    (90.90, 113.86),  # P5
-    (118.32, 116.01),  # P6
-    (42.69, 190.00),  # P7
+    (81.67, 0.00),  # P0
+    (112.48, 32.19),  # P1
+    (107.26, 34.29),  # P2
+    (120.78, 67.84),  # P3
+    (128.44, 85.46),  # P4
+    (90.94, 115.12),  # P5
+    (118.81, 116.08),  # P6
+    (42.83, 190.00),  # P7
 ]
 
 

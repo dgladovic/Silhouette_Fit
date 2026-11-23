@@ -15,14 +15,14 @@ import math, os, struct
 
 # ------------------------------------------------------------------ PARAMETERS
 PROFILE_POINTS = [            # (radius mm, height mm) - wall fit
-    (81.36, 0.00), (113.71, 27.60), (109.78, 40.66), (122.62, 69.54), (130.22, 103.63), (91.87, 115.50), (118.27, 116.05), (44.07, 190.00),
+    (81.34, 0.00), (113.51, 27.45), (107.39, 36.76), (122.73, 71.37), (132.22, 88.43), (93.15, 114.11), (119.66, 115.14), (44.01, 190.00),
 ]
 TWIST_POINTS = [              # (height fraction, degrees)
-    (0.0000, 0.00), (0.0000, -6.29), (0.3951, 0.17), (0.6565, 82.68), (1.0000, 89.14),
+    (0.0000, 0.00), (0.0000, -6.17), (0.3965, 0.83), (0.6538, 82.80), (1.0000, 88.58),
 ]
 HEIGHT = 190.0                # mm
 SHAPE_RATIO = 0.20            # b/a of the 4-petal rose (used only if LOBE_DEPTH is None)
-LOBE_DEPTH = [(0.0, 0.2227), (38.0, 0.2038), (76.0, 0.2097), (114.0, 0.2062), (152.0, 0.2478), (190.0, 0.2114)]  # (z mm, k): lobe depth curve
+LOBE_DEPTH = [(0.0, 0.2236), (38.0, 0.2093), (76.0, 0.2103), (114.0, 0.1717), (152.0, 0.2286), (190.0, 0.2005)]  # (z mm, k): lobe depth curve
 RIBS_PER_QUARTER = 45         # 180 ribs around
 RIB_HEIGHT = 1.5              # mm, tooth height outward from the rose
 WALL = 1.2                    # mm wall thickness (inner skin = outer moved inward), 0 = surface only
