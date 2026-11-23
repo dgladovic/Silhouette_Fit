@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Fusion run logs
+generator_debug.log
+
+# Generated meshes (rebuild with: cd LampWall && python lamp_wall.py)
+*.stl
+
+# Generated check images (rebuild with the scripts listed in PROGRESS.md)
+/*.png
+experiments/**/*.png
+backup_*/**/*.png
+LampWall/fit/*.png
+views/**/*.png
+!views/**/reference_*.png

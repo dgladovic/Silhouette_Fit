@@ -1,0 +1,6 @@
+rose:0.12      silhouette RMS 0.30 max 1.35 mm | centre slope RMS 0.020 | twist top 78.9 | whole-drawing rib angle error 3.64 deg
+rose:0.2       silhouette RMS 0.10 max 0.30 mm | centre slope RMS 0.014 | twist top 85.3 | whole-drawing rib angle error 1.68 deg
+rose:0.28      silhouette RMS 0.16 max 0.97 mm | centre slope RMS 0.010 | twist top 88.7 | whole-drawing rib angle error 2.80 deg
+circles:0.3    silhouette RMS 0.17 max 0.80 mm | centre slope RMS 0.020 | twist top 75.6 | whole-drawing rib angle error 6.01 deg
+circles:0.4    silhouette RMS 0.22 max 1.04 mm | centre slope RMS 0.019 | twist top 76.9 | whole-drawing rib angle error 4.90 deg
+circles:0.5    silhouette RMS 0.12 max 0.81 mm | centre slope RMS 0.019 | twist top 83.4 | whole-drawing rib angle error 3.12 deg
