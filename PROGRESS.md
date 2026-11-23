@@ -138,3 +138,23 @@ Ideas: weight the two views differently (`W34` in `fit_joint.py`); the two drawi
 
 - The FulLTextureLamp script used the S-curve twist (`k1 = 0, k2 = 0.8`) on the *profile Bezier parameter*
   instead of the height; its hand-tuned angles agree with the fitted twist within ~2° at every 10 %.
+
+---
+
+## Model study (docs/05_EXPERIMENTS.md) — completed 2026-11-24
+
+10 model setups (the user's scenarios M01–M05 + new M06–M10) × E0 fit + E1–E6 sweeps, shared kernel `models/_common/`
+(v3), every model with its own `PROGRESS.md` history. Results: `judge/RESULTS.md`, local page `judge/results.html`.
+
+| Rank | Model | Front / 3/4 (of 19) | Ribs | Params |
+|---|---|---|---|---|
+| 1 | M03 custom spline + 2D Bézier radius + cubic twist at Bézier t | 14 / 14 | 0.43 mm, 92 % ≤ 1 mm | 16 |
+| 2 | M02 custom spline + keyframe radius + 5-pt Bézier twist | 14 / 13 | 0.47 mm, 91 % | 19 |
+| 3 | M07 rose + 8θ harmonic + 10 mm knots | 13 / 13 | 0.43 mm, 90 % | 52 |
+| — | (before the study, active fit M05, same scoring) | 4 / — | 0.82 mm | 27 |
+
+Findings: base shape decides most (custom spline / rose+8θ ≫ plain rose); the drawn lamp is rotated ≈ −1.4° (free
+orientation offset); twist is the most sensitive parameter; triangle count/width/height and sections mostly shift the
+outline. Still failing: S01 rim edge and parts of the waist S08–S11.
+**Not yet done:** the active fit (`fit_ribs_result.json`, Fusion scripts in the repo root) is unchanged — still M05.
+Next: Fusion build F2 of the top 2 (`fusion_runs/README.md`), then the user picks the model.

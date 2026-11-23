@@ -2,7 +2,8 @@
 
 Read this before creating, running or judging a model experiment.
 
-**Status: PLAN — no code yet.** The user approves the plan, then the build starts (§5.10).
+**Status: COMPLETED 2026-11-24 (kernel v3).** Results: `judge/RESULTS.md`, `judge/results.html`. Kernel history and every
+deviation from this plan (multi-start, orientation offset, gate, Catmull-Rom knots, table-driven Fusion export): `models/_common/PROGRESS.md`.
 
 ## 5.0 Decisions so far
 | Date | Decision |

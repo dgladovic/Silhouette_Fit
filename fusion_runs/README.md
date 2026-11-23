@@ -34,3 +34,16 @@ Notes:
 | F1-2 | | | |
 | F1-3 | | | |
 | F1-4 | | | |
+
+## F2 — build the top 2 models (manual)
+
+The kernel generated one Fusion script per model (table-driven, one quarter, the model's own sections and teeth).
+**These generated scripts have not been run in Fusion yet**, so this is also their first test.
+
+| Run | Script folder to add in Fusion's Scripts dialog | Then | Save the dump as |
+|---|---|---|---|
+| F2-1 | `Silhouette_Fit/models/M03_spline_bez2d/fusion/M03` (30 sections, 23 teeth, equal angle) | DumpCanvas | `fusion_runs/F2-1_M03.txt` |
+| F2-2 | `Silhouette_Fit/models/M02_spline_beztwist/fusion/M02` (15 sections, 22 teeth, arc) | DumpCanvas | `fusion_runs/F2-2_M02.txt` |
+
+Same rules as F1: a new empty design for each run, move `fusion_dump.txt` after each run, note the build time and any
+warning. Claude then compares each dump with the kernel's as-built prediction (as in Gate B/C).

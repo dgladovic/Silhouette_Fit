@@ -1,0 +1,344 @@
+{
+ "id": "M04",
+ "title": "custom spline base + keyframe radius + keyframe twist (Catmull-Rom, refined per segment)",
+ "folder": "M04_spline_keyframes",
+ "n_params": 22,
+ "settings": {
+  "N": 22,
+  "H": 2.4,
+  "placement": "angle_half",
+  "target_w": 9.0,
+  "sections": {
+   "mode": "list",
+   "z": [
+    0.0,
+    19.0,
+    38.0,
+    57.0,
+    76.0,
+    95.0,
+    114.0,
+    133.0,
+    152.0,
+    171.0,
+    190.0
+   ]
+  }
+ },
+ "source": "../BaseScript (bez_points, angle_points, smooth_spline_interpolation, generate_shell_triangles_by_count, sections on the keys); refinement rule docs/05 \u00a75.2",
+ "kernel": 3,
+ "built": {
+  "front_pass": 10,
+  "v34_pass": 13,
+  "sil_max": 2.0733112199873176,
+  "rib_mean": 0.4365946314808156,
+  "within1": 92.707182320442,
+  "rib_max": 6.779372431139166,
+  "v34_mean": 0.8221073536304513,
+  "v34_max": 4.214327192514063,
+  "n_rib": 905
+ },
+ "exact": {
+  "front_pass": 12,
+  "v34_pass": 11,
+  "sil_max": 2.0479986754040453,
+  "rib_mean": 0.4672349994342256,
+  "within1": 90.93922651933701,
+  "rib_max": 6.784943771772518,
+  "v34_mean": 0.7751309687663112,
+  "v34_max": 3.407506306605016,
+  "n_rib": 905
+ },
+ "seg_front": [
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false
+ ],
+ "seg_v34": [
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "seg_front_exact": [
+  false,
+  true,
+  false,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false
+ ],
+ "seg_rib_mean": [
+  0.3249521276020025,
+  0.14236653269684493,
+  0.1446610724253418,
+  0.2445795878506859,
+  0.2983857533682567,
+  0.37086746927204317,
+  0.4579169150177064,
+  0.6426205288875017,
+  1.06085052935791,
+  0.798002436130177,
+  0.6605035555760442,
+  0.653864335512607,
+  0.557098682271219,
+  0.43905989881070623,
+  0.32849705520158345,
+  0.3853549356406319,
+  0.41427848707162557,
+  0.43059188879736715,
+  0.42525877035118853
+ ],
+ "seg_v34_mean": [
+  2.642465347713852,
+  1.3435069160673745,
+  1.5294730638423368,
+  1.0069027925883545,
+  0.8113518462736039,
+  0.8929265398587823,
+  0.43467845415528444,
+  0.3966870590280358,
+  0.38065782078104865,
+  0.5976901702971957,
+  0.6180824157449295,
+  0.6231088950994429,
+  0.5757237038485238,
+  0.4948707330709553,
+  0.44128218524017276,
+  0.6184685488920226,
+  0.4687445440501431,
+  0.5602882346710213,
+  0.6092668927135353
+ ],
+ "seg_sil_max": [
+  2.0733112199873176,
+  1.0244800781220391,
+  0.5595993212325396,
+  0.3247267187154961,
+  0.1920322040318041,
+  0.16654309704343007,
+  0.1493690958042464,
+  0.18056044129669147,
+  0.2719562014333121,
+  0.2719562014333121,
+  0.7947238742153928,
+  0.3128971340762945,
+  0.34785877133900556,
+  0.14005381773429804,
+  0.11461867037755269,
+  0.20455074368048543,
+  0.27407634860706764,
+  0.7367903067945107,
+  1.2829824930103868
+ ],
+ "locality": 0.6294624287718613,
+ "locality_twist": 0.6294624543697956,
+ "locality_radius": 0.6294624031739269,
+ "smooth": {
+  "r0_inflections": 2,
+  "twist_inflections": 3,
+  "extra": 2,
+  "score": 0.5
+ },
+ "constraints": [],
+ "loft_dev_20": 0.04695598909297871,
+ "loft_gate_sections": 39,
+ "buildable": true,
+ "fit": {
+  "cost": 90.72386142144047,
+  "nfev": 18,
+  "cap_hit": [
+   false,
+   false,
+   false
+  ],
+  "best_start": "pool:M03_E0v2",
+  "starts": [
+   {
+    "start": "own start (P0)",
+    "cost": 91.0729344688637,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M01_E0",
+    "cost": 90.95055733599432,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M05_E0",
+    "cost": 90.87393875568009,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M02_X1c",
+    "cost": 90.86201991077994,
+    "nfev": 26,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M01_E0v2",
+    "cost": 91.00829784070193,
+    "nfev": 13,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M02_E0v2",
+    "cost": 90.91848378836588,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M03_E0v2",
+    "cost": 90.72386142144047,
+    "nfev": 18,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M04_E0v2",
+    "cost": 91.09981626114117,
+    "nfev": 25,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M05_E0v2",
+    "cost": 90.99644683070682,
+    "nfev": 13,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M06_E0v2",
+    "cost": 90.98314480651119,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M07_E0v2",
+    "cost": 90.94507064106318,
+    "nfev": 22,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M08_E0v2",
+    "cost": 90.78965973748807,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M09_E0v2",
+    "cost": 90.89957435798812,
+    "nfev": 15,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M10_E0v2",
+    "cost": 90.91214560052026,
+    "nfev": 17,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  ],
+  "fit_seconds": 167.9
+ }
+}

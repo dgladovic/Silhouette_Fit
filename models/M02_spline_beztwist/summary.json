@@ -1,0 +1,332 @@
+{
+ "id": "M02",
+ "title": "custom spline base + keyframe radius + 5-point Bezier twist (t, deg)",
+ "folder": "M02_spline_beztwist",
+ "n_params": 19,
+ "settings": {
+  "N": 22,
+  "H": 3.0,
+  "placement": "arc",
+  "target_w": 9.0,
+  "sections": {
+   "mode": "uniform_z",
+   "count": 15
+  }
+ },
+ "source": "../Grasshoper_full (generate_arc_normal N 22, scale_perp 0.3 cm, target_width 0.9 cm, 15 sections; twist = calculate_bezier_twist2 twist_points); radius start = ../BaseScript bez_points",
+ "kernel": 3,
+ "built": {
+  "front_pass": 14,
+  "v34_pass": 13,
+  "sil_max": 2.000787224326814,
+  "rib_mean": 0.46641582417484606,
+  "within1": 90.93922651933701,
+  "rib_max": 7.11929042768395,
+  "v34_mean": 0.784203632330824,
+  "v34_max": 4.140407059561958,
+  "n_rib": 905
+ },
+ "exact": {
+  "front_pass": 13,
+  "v34_pass": 13,
+  "sil_max": 2.000787224326814,
+  "rib_mean": 0.4845936177440359,
+  "within1": 89.72375690607734,
+  "rib_max": 7.12195935021532,
+  "v34_mean": 0.7585140588915964,
+  "v34_max": 3.7604100014622093,
+  "n_rib": 905
+ },
+ "seg_front": [
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false
+ ],
+ "seg_v34": [
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "seg_front_exact": [
+  false,
+  true,
+  false,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false
+ ],
+ "seg_rib_mean": [
+  0.18852639914351702,
+  0.28199408382346347,
+  0.17246270603364292,
+  0.23451678376523957,
+  0.3187382777538663,
+  0.40024062355593093,
+  0.5039943594561166,
+  0.7298419370711999,
+  1.148832389776592,
+  0.8631180513557442,
+  0.6506084972316655,
+  0.5687041996264927,
+  0.48848163213139323,
+  0.3828489126048569,
+  0.3309932540933934,
+  0.45938481248548596,
+  0.5109734085675831,
+  0.600576867400231,
+  0.5805060436052354
+ ],
+ "seg_v34_mean": [
+  2.2636426182087455,
+  1.124265825108163,
+  1.32275801876068,
+  0.885848739011044,
+  0.8806954102397905,
+  0.8142150838442488,
+  0.5396771552007397,
+  0.28021574397120697,
+  0.2901389392941937,
+  0.45645813547726033,
+  0.6518752495544189,
+  0.5631751131599235,
+  0.5851718118621391,
+  0.5402582098965198,
+  0.4401523387087232,
+  0.7010021431153638,
+  0.5631884948649479,
+  0.693091970866323,
+  0.5989563137298811
+ ],
+ "seg_sil_max": [
+  2.000787224326814,
+  0.15040980593204267,
+  0.4254882064814609,
+  0.41130892788532947,
+  0.21258700051446056,
+  0.179937553746214,
+  0.13870707621981637,
+  0.22750867301660094,
+  0.311568688489146,
+  0.18841871355684248,
+  0.4706757520858673,
+  0.2435300473871962,
+  0.16922519348455012,
+  0.11598851272923127,
+  0.1646347303248632,
+  0.14505278840159974,
+  0.18714843197049902,
+  0.24880716636278777,
+  1.3234084598064086
+ ],
+ "locality": 0.5175151629602598,
+ "locality_twist": 0.40556792274586656,
+ "locality_radius": 0.6294624031746531,
+ "smooth": {
+  "r0_inflections": 2,
+  "twist_inflections": 1,
+  "extra": 0,
+  "score": 1.0
+ },
+ "constraints": [],
+ "loft_dev_20": 0.04038540619956166,
+ "loft_gate_sections": 39,
+ "buildable": true,
+ "fit": {
+  "cost": 94.29794643635807,
+  "nfev": 16,
+  "cap_hit": [
+   false,
+   false,
+   false
+  ],
+  "best_start": "pool:M01_E0",
+  "starts": [
+   {
+    "start": "own start (P0)",
+    "cost": 94.51241263357356,
+    "nfev": 19,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M01_E0",
+    "cost": 94.29794643635807,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M05_E0",
+    "cost": 95.47812787688473,
+    "nfev": 19,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M02_X1c",
+    "cost": 97.45088858514742,
+    "nfev": 18,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M01_E0v2",
+    "cost": 94.3238541819316,
+    "nfev": 23,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M02_E0v2",
+    "cost": 97.40439092489675,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M03_E0v2",
+    "cost": 101.3582559034069,
+    "nfev": 17,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M04_E0v2",
+    "cost": 94.62542139994247,
+    "nfev": 18,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M05_E0v2",
+    "cost": 97.10925394760696,
+    "nfev": 17,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M06_E0v2",
+    "cost": 94.80703080845464,
+    "nfev": 23,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M07_E0v2",
+    "cost": 94.68728152153902,
+    "nfev": 21,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M08_E0v2",
+    "cost": 94.6372569249069,
+    "nfev": 17,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M09_E0v2",
+    "cost": 94.37135793834224,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M10_E0v2",
+    "cost": 94.63984385840638,
+    "nfev": 17,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  ],
+  "fit_seconds": 157.1
+ }
+}

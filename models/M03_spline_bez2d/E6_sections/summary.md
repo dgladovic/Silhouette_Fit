@@ -1,0 +1,23 @@
+# M03 — E6 sections (count x placement)
+
+- uniform_z n=8: loft deviation from exact max 0.30 / mean 0.072 mm; front 15/19, 3/4 14/19
+- uniform_z n=11: loft deviation from exact max 0.09 / mean 0.016 mm; front 14/19, 3/4 14/19
+- uniform_z n=15: loft deviation from exact max 0.03 / mean 0.003 mm; front 14/19, 3/4 14/19
+- uniform_z n=20: loft deviation from exact max 0.01 / mean 0.001 mm; front 14/19, 3/4 14/19
+- uniform_z n=30: loft deviation from exact max 0.00 / mean 0.000 mm; front 14/19, 3/4 14/19
+- uniform_z n=39: loft deviation from exact max 0.00 / mean 0.000 mm; front 14/19, 3/4 14/19
+- adaptive n=8: loft deviation from exact max 0.23 / mean 0.057 mm; front 15/19, 3/4 13/19
+- adaptive n=11: loft deviation from exact max 0.14 / mean 0.022 mm; front 14/19, 3/4 14/19
+- adaptive n=15: loft deviation from exact max 0.05 / mean 0.006 mm; front 14/19, 3/4 14/19
+- adaptive n=20: loft deviation from exact max 0.02 / mean 0.001 mm; front 14/19, 3/4 14/19
+- adaptive n=30: loft deviation from exact max 0.00 / mean 0.000 mm; front 14/19, 3/4 14/19
+- adaptive n=39: loft deviation from exact max 0.00 / mean 0.000 mm; front 14/19, 3/4 14/19
+- bezier_t n=8: loft deviation from exact max 0.29 / mean 0.071 mm; front 15/19, 3/4 14/19
+- bezier_t n=11: loft deviation from exact max 0.09 / mean 0.018 mm; front 14/19, 3/4 14/19
+- bezier_t n=15: loft deviation from exact max 0.03 / mean 0.004 mm; front 14/19, 3/4 14/19
+- bezier_t n=20: loft deviation from exact max 0.01 / mean 0.001 mm; front 14/19, 3/4 14/19
+- bezier_t n=30: loft deviation from exact max 0.00 / mean 0.000 mm; front 14/19, 3/4 14/19
+- bezier_t n=39: loft deviation from exact max 0.00 / mean 0.000 mm; front 14/19, 3/4 14/19
+- knots10 n=20: loft deviation from exact max 0.01 / mean 0.001 mm; front 14/19, 3/4 14/19
+- own sections: {'mode': 'bezier_t', 'count': 30}
+- loft simulator accuracy vs Fusion (Gate B): ±0.5 mm below 15 sections, ≤0.13 mm at 15+

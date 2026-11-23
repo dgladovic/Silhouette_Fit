@@ -1,0 +1,12 @@
+{
+ "source": "reference/fusion_rel_size_YZ.jpg (Fusion canvas rel_size, YZ plane)",
+ "mm_per_px_x": 0.1442445292620865,
+ "mm_per_px_z": 0.14718829654782117,
+ "axis_col_px": 785.5,
+ "W_MM": 226.7524,
+ "H_MM": 260.08172,
+ "PLANE_Z": 60.0,
+ "V_OFF": -130.04086,
+ "mirrored": "canvas mirrored left-right vs the original drawing",
+ "note": "z(row) = PLANE_Z + V_OFF + H_MM*(1-(row+0.5)/H_PX)"
+}

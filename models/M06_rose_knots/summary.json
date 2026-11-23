@@ -1,0 +1,331 @@
+{
+ "id": "M06",
+ "title": "rose k(z) + 10 mm knots radius + 10 mm knots twist",
+ "folder": "M06_rose_knots",
+ "n_params": 46,
+ "settings": {
+  "N": 22,
+  "H": 3.0,
+  "placement": "arc",
+  "target_w": 9.0,
+  "sections": {
+   "mode": "knots10"
+  }
+ },
+ "source": "new model; settings inherit M05 (Grasshoper_full/), sections on the 10 mm knots",
+ "kernel": 3,
+ "built": {
+  "front_pass": 7,
+  "v34_pass": 10,
+  "sil_max": 2.487587232766586,
+  "rib_mean": 0.663025981957107,
+  "within1": 78.31858407079646,
+  "rib_max": 6.138779172695578,
+  "v34_mean": 0.939508897413197,
+  "v34_max": 4.09744023534534,
+  "n_rib": 904
+ },
+ "exact": {
+  "front_pass": 7,
+  "v34_pass": 10,
+  "sil_max": 2.487587232766586,
+  "rib_mean": 0.6630099195587505,
+  "within1": 78.53982300884957,
+  "rib_max": 6.151463776911228,
+  "v34_mean": 0.9347895367938069,
+  "v34_max": 4.006930974623767,
+  "n_rib": 904
+ },
+ "seg_front": [
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  true,
+  false,
+  false,
+  false,
+  false
+ ],
+ "seg_v34": [
+  false,
+  true,
+  false,
+  false,
+  false,
+  true,
+  true,
+  false,
+  false,
+  false,
+  true,
+  true,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "seg_front_exact": [
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  true,
+  false,
+  false,
+  false,
+  false
+ ],
+ "seg_rib_mean": [
+  0.28466866102526633,
+  0.31479434718107846,
+  0.2367789512964291,
+  0.29958048504856466,
+  0.3827068644401633,
+  0.5121505556484354,
+  0.5377438637125148,
+  0.9125396373985943,
+  1.4391599351226956,
+  1.2067523984480337,
+  0.9462873234265766,
+  0.9602981176312019,
+  0.972629651718283,
+  0.803756549877789,
+  0.7093474652982691,
+  0.8182788491651348,
+  0.9072230236048772,
+  0.8929995950364895,
+  0.8833531219335725
+ ],
+ "seg_v34_mean": [
+  2.0243074477110863,
+  0.4844576349604075,
+  0.8472341286688029,
+  1.2615691538866793,
+  1.4520484947916,
+  0.7376784201853805,
+  0.4939518683181634,
+  1.1416869721346325,
+  1.7836516044762354,
+  1.4794770937693562,
+  0.6087909640662748,
+  0.5940893358701198,
+  0.8390279035268169,
+  0.8350387920363027,
+  0.5655661739700014,
+  0.4910895460599442,
+  0.5894933474837367,
+  0.4209334239628637,
+  0.6153047703267039
+ ],
+ "seg_sil_max": [
+  2.487587232766586,
+  0.5368652540362149,
+  0.28649672016024397,
+  0.17262993140785454,
+  0.04148926405696329,
+  0.1059826902920804,
+  0.13099263782034143,
+  0.1984200919604291,
+  0.32633835151119683,
+  0.4778297914691336,
+  0.5445141947736403,
+  0.22373504380978204,
+  0.1481961829199605,
+  0.16407701597670155,
+  0.26847522217629205,
+  0.3295881462125436,
+  0.17945498666604465,
+  0.32358040445871694,
+  0.5063810385499039
+ ],
+ "locality": 0.9574911193032192,
+ "locality_twist": 0.9574915429539507,
+ "locality_radius": 0.9574906956524878,
+ "smooth": {
+  "r0_inflections": 4,
+  "twist_inflections": 8,
+  "extra": 9,
+  "score": 0.18181818181818182
+ },
+ "constraints": [],
+ "loft_dev_20": 0.06359250737840227,
+ "loft_gate_sections": 39,
+ "buildable": true,
+ "fit": {
+  "cost": 159.9689585675094,
+  "nfev": 15,
+  "cap_hit": [
+   false,
+   false,
+   false
+  ],
+  "best_start": "pool:M04_E0v2",
+  "starts": [
+   {
+    "start": "own start (P0)",
+    "cost": 160.7009013644404,
+    "nfev": 15,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M01_E0",
+    "cost": 162.00278814677756,
+    "nfev": 15,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M05_E0",
+    "cost": 163.54254883088964,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M02_X1c",
+    "cost": 161.19146289670837,
+    "nfev": 15,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M01_E0v2",
+    "cost": 160.37721937294435,
+    "nfev": 13,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M02_E0v2",
+    "cost": 160.54514538843964,
+    "nfev": 17,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M03_E0v2",
+    "cost": 163.52588935530463,
+    "nfev": 42,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M04_E0v2",
+    "cost": 159.9689585675094,
+    "nfev": 15,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M05_E0v2",
+    "cost": 160.86638013929542,
+    "nfev": 28,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M06_E0v2",
+    "cost": 162.98249745112403,
+    "nfev": 21,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M07_E0v2",
+    "cost": 167.13922882092353,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M08_E0v2",
+    "cost": 160.45853357431497,
+    "nfev": 15,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M09_E0v2",
+    "cost": 164.68008572306758,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M10_E0v2",
+    "cost": 162.81421064498758,
+    "nfev": 22,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  ],
+  "fit_seconds": 412.4
+ }
+}

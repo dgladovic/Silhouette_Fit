@@ -1,0 +1,3430 @@
+{
+ "weights": {
+  "fit": 0.35,
+  "held": 0.3,
+  "loc": 0.15,
+  "simple": 0.1,
+  "smooth": 0.1
+ },
+ "ranked": [
+  {
+   "id": "M03",
+   "title": "custom spline base + 7-point 2D Bezier radius + cubic twist at Bezier t",
+   "folder": "M03_spline_bez2d",
+   "n_params": 16,
+   "settings": {
+    "N": 23,
+    "H": 2.0,
+    "placement": "angle_half",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "bezier_t",
+     "count": 30
+    }
+   },
+   "source": "../FulLTextureLamp (calculate_2d_bezier_profile_7, calculate_bezier_twist at Bezier t, generate_polar_triangles_by_count N 23 / 0.20 cm, 30 sections uniform in t); base = custom spline per scenario",
+   "kernel": 3,
+   "built": {
+    "front_pass": 14,
+    "v34_pass": 14,
+    "sil_max": 0.7606595831183967,
+    "rib_mean": 0.42726331769667103,
+    "within1": 91.83222958057395,
+    "rib_max": 6.58222126953406,
+    "v34_mean": 0.7434286557097558,
+    "v34_max": 3.2890531869986113,
+    "n_rib": 906
+   },
+   "exact": {
+    "front_pass": 14,
+    "v34_pass": 13,
+    "sil_max": 0.7605515724717833,
+    "rib_mean": 0.4272580993386681,
+    "within1": 91.83222958057395,
+    "rib_max": 6.582157532048029,
+    "v34_mean": 0.7603713283771444,
+    "v34_max": 3.29394380349311,
+    "n_rib": 906
+   },
+   "seg_front": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "seg_v34": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "seg_front_exact": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "seg_rib_mean": [
+    0.12840270798541764,
+    0.18570508265118943,
+    0.180632456384749,
+    0.2449472063669728,
+    0.2802826111869813,
+    0.34984981995572234,
+    0.4387196713686609,
+    0.5961956387637734,
+    1.0166239385676314,
+    0.7687107196573362,
+    0.6786410463536784,
+    0.7090588034116394,
+    0.611822648482296,
+    0.4810565604793458,
+    0.35029462308772563,
+    0.3651700130356976,
+    0.3968647170716365,
+    0.4537149818702841,
+    0.44974474931853226
+   ],
+   "seg_v34_mean": [
+    1.8426312568528826,
+    1.159634969979476,
+    1.1250640388388802,
+    0.9527665139649544,
+    0.6246246437451671,
+    0.7318342448261315,
+    0.41928967914086457,
+    0.2937097235783258,
+    0.4429159800440407,
+    0.5162685179785232,
+    0.6022456363613466,
+    0.5450023978255368,
+    0.5399321539934406,
+    0.49405940189815134,
+    0.5254026991634825,
+    0.4966373333359938,
+    0.4413388530474851,
+    0.5674987227622051,
+    1.018120224804502
+   ],
+   "seg_sil_max": [
+    0.6961263143737284,
+    0.3237906828560426,
+    0.23283030004070326,
+    0.18730287027626957,
+    0.1773825429642244,
+    0.16955259802928424,
+    0.15819032450471582,
+    0.1957892403416679,
+    0.3139184817854357,
+    0.25653610532522464,
+    0.7606595831183967,
+    0.4487914765552574,
+    0.3416098381394619,
+    0.16949775357562658,
+    0.1438788597851186,
+    0.09869720913695801,
+    0.14210596203183457,
+    0.2152291670067754,
+    0.2152291670067754
+   ],
+   "locality": 0.41524656381196423,
+   "locality_twist": 0.41550367801616517,
+   "locality_radius": 0.4149894496077633,
+   "smooth": {
+    "r0_inflections": 0,
+    "twist_inflections": 1,
+    "extra": 0,
+    "score": 1.0
+   },
+   "constraints": [],
+   "loft_dev_20": 0.0003623502941110246,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 72.92101351353884,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M07_E0v2",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 82.1567434473831,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 78.45038838664703,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 73.29748708879109,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 103.41972600537194,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 77.01972694293673,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 90.39778731705289,
+      "nfev": 26,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 82.23724320040671,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 78.03546239763978,
+      "nfev": 26,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 74.33029068191533,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 76.22251946804806,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 72.92101351353884,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 73.1815331437378,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 74.12996245414874,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 73.29934849357535,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 194.0
+   },
+   "components": {
+    "fit": 0.7368421052631579,
+    "held": 0.7368421052631579,
+    "loc": 0.41524656381196423,
+    "simple": 0.6521739130434783,
+    "smooth": 1.0
+   },
+   "score": 0.706451744297195,
+   "rank": 1
+  },
+  {
+   "id": "M02",
+   "title": "custom spline base + keyframe radius + 5-point Bezier twist (t, deg)",
+   "folder": "M02_spline_beztwist",
+   "n_params": 19,
+   "settings": {
+    "N": 22,
+    "H": 3.0,
+    "placement": "arc",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "uniform_z",
+     "count": 15
+    }
+   },
+   "source": "../Grasshoper_full (generate_arc_normal N 22, scale_perp 0.3 cm, target_width 0.9 cm, 15 sections; twist = calculate_bezier_twist2 twist_points); radius start = ../BaseScript bez_points",
+   "kernel": 3,
+   "built": {
+    "front_pass": 14,
+    "v34_pass": 13,
+    "sil_max": 2.000787224326814,
+    "rib_mean": 0.46641582417484606,
+    "within1": 90.93922651933701,
+    "rib_max": 7.11929042768395,
+    "v34_mean": 0.784203632330824,
+    "v34_max": 4.140407059561958,
+    "n_rib": 905
+   },
+   "exact": {
+    "front_pass": 13,
+    "v34_pass": 13,
+    "sil_max": 2.000787224326814,
+    "rib_mean": 0.4845936177440359,
+    "within1": 89.72375690607734,
+    "rib_max": 7.12195935021532,
+    "v34_mean": 0.7585140588915964,
+    "v34_max": 3.7604100014622093,
+    "n_rib": 905
+   },
+   "seg_front": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "seg_v34": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "seg_front_exact": [
+    false,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "seg_rib_mean": [
+    0.18852639914351702,
+    0.28199408382346347,
+    0.17246270603364292,
+    0.23451678376523957,
+    0.3187382777538663,
+    0.40024062355593093,
+    0.5039943594561166,
+    0.7298419370711999,
+    1.148832389776592,
+    0.8631180513557442,
+    0.6506084972316655,
+    0.5687041996264927,
+    0.48848163213139323,
+    0.3828489126048569,
+    0.3309932540933934,
+    0.45938481248548596,
+    0.5109734085675831,
+    0.600576867400231,
+    0.5805060436052354
+   ],
+   "seg_v34_mean": [
+    2.2636426182087455,
+    1.124265825108163,
+    1.32275801876068,
+    0.885848739011044,
+    0.8806954102397905,
+    0.8142150838442488,
+    0.5396771552007397,
+    0.28021574397120697,
+    0.2901389392941937,
+    0.45645813547726033,
+    0.6518752495544189,
+    0.5631751131599235,
+    0.5851718118621391,
+    0.5402582098965198,
+    0.4401523387087232,
+    0.7010021431153638,
+    0.5631884948649479,
+    0.693091970866323,
+    0.5989563137298811
+   ],
+   "seg_sil_max": [
+    2.000787224326814,
+    0.15040980593204267,
+    0.4254882064814609,
+    0.41130892788532947,
+    0.21258700051446056,
+    0.179937553746214,
+    0.13870707621981637,
+    0.22750867301660094,
+    0.311568688489146,
+    0.18841871355684248,
+    0.4706757520858673,
+    0.2435300473871962,
+    0.16922519348455012,
+    0.11598851272923127,
+    0.1646347303248632,
+    0.14505278840159974,
+    0.18714843197049902,
+    0.24880716636278777,
+    1.3234084598064086
+   ],
+   "locality": 0.5175151629602598,
+   "locality_twist": 0.40556792274586656,
+   "locality_radius": 0.6294624031746531,
+   "smooth": {
+    "r0_inflections": 2,
+    "twist_inflections": 1,
+    "extra": 0,
+    "score": 1.0
+   },
+   "constraints": [],
+   "loft_dev_20": 0.04038540619956166,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 94.29794643635807,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M01_E0",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 94.51241263357356,
+      "nfev": 19,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 94.29794643635807,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 95.47812787688473,
+      "nfev": 19,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 97.45088858514742,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 94.3238541819316,
+      "nfev": 23,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 97.40439092489675,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 101.3582559034069,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 94.62542139994247,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 97.10925394760696,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 94.80703080845464,
+      "nfev": 23,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 94.68728152153902,
+      "nfev": 21,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 94.6372569249069,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 94.37135793834224,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 94.63984385840638,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 157.1
+   },
+   "components": {
+    "fit": 0.7368421052631579,
+    "held": 0.6842105263157895,
+    "loc": 0.5175151629602598,
+    "simple": 0.6122448979591837,
+    "smooth": 1.0
+   },
+   "score": 0.7020096589767995,
+   "rank": 2
+  },
+  {
+   "id": "M07",
+   "title": "rose + 8\u03b8 harmonic c(z) + 10 mm knots radius + 10 mm knots twist",
+   "folder": "M07_rose8_knots",
+   "n_params": 52,
+   "settings": {
+    "N": 22,
+    "H": 3.0,
+    "placement": "arc",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "knots10"
+    }
+   },
+   "source": "new model; settings inherit M05 (Grasshoper_full/), sections on the 10 mm knots",
+   "kernel": 3,
+   "built": {
+    "front_pass": 13,
+    "v34_pass": 13,
+    "sil_max": 1.7310852209728154,
+    "rib_mean": 0.4299568968982152,
+    "within1": 90.04424778761062,
+    "rib_max": 8.947083126276652,
+    "v34_mean": 0.9130624454857852,
+    "v34_max": 27.552668759829537,
+    "n_rib": 904
+   },
+   "exact": {
+    "front_pass": 14,
+    "v34_pass": 13,
+    "sil_max": 1.7310852209728154,
+    "rib_mean": 0.4287566768800062,
+    "within1": 89.82300884955751,
+    "rib_max": 8.947752549375792,
+    "v34_mean": 0.895687963316901,
+    "v34_max": 27.54909515049223,
+    "n_rib": 904
+   },
+   "seg_front": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false
+   ],
+   "seg_v34": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "seg_front_exact": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true
+   ],
+   "seg_rib_mean": [
+    0.21829541295992186,
+    0.17401526381498675,
+    0.13717973894387536,
+    0.17551464223391613,
+    0.22911409986426784,
+    0.3453826427716182,
+    0.4346634556486307,
+    0.593762656568367,
+    1.0057597071126412,
+    0.5403955204685116,
+    0.6337901052617255,
+    0.6093042323392212,
+    0.5527265281211607,
+    0.5203277729415875,
+    0.5969379550081836,
+    0.673078359408396,
+    0.6320097391176737,
+    0.5512006926693263,
+    0.49983828278768305
+   ],
+   "seg_v34_mean": [
+    2.434242750278381,
+    1.2942734839901093,
+    1.2661496530554255,
+    0.4275766587985196,
+    0.2861034096179935,
+    0.3736044119056583,
+    0.5942264491383358,
+    0.3420877622449691,
+    0.4346505929646984,
+    0.40117085034713285,
+    0.3130526773193643,
+    0.2919954950552464,
+    0.570044390860839,
+    0.4420904179073986,
+    0.5479362803555672,
+    0.5874254078661412,
+    0.8642143480098191,
+    1.3672207283940863,
+    1.7617787069984365
+   ],
+   "seg_sil_max": [
+    1.7310852209728154,
+    0.3185778274560249,
+    0.1600135920457575,
+    0.08436089243929246,
+    0.23151919416552857,
+    0.18782682803512785,
+    0.3895644238616285,
+    0.17481043187537182,
+    0.21219495176080727,
+    0.30202102122639474,
+    0.5688993629660075,
+    0.07097934447163823,
+    0.1718395724479791,
+    0.22105035898809433,
+    0.29006902463846984,
+    0.23192429035090356,
+    0.16039436286666842,
+    0.29547884497716836,
+    0.5084491922015388
+   ],
+   "locality": 0.9574911305869016,
+   "locality_twist": 0.9574915655188431,
+   "locality_radius": 0.95749069565496,
+   "smooth": {
+    "r0_inflections": 4,
+    "twist_inflections": 5,
+    "extra": 6,
+    "score": 0.25
+   },
+   "constraints": [],
+   "loft_dev_20": 0.017255895960630596,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 79.2829616337041,
+    "nfev": 48,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M04_E0v2",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 107.62520389893366,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 101.12409909645405,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 111.7806566426201,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 101.62012654028244,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 104.39879782817405,
+      "nfev": 22,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 94.99240196598217,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 99.67654105661495,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 79.2829616337041,
+      "nfev": 48,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 112.10116161968773,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 103.59794691642205,
+      "nfev": 19,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 82.35315696205973,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 101.13438843777334,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 107.5029634549826,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 101.11279869432921,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 596.8
+   },
+   "components": {
+    "fit": 0.6842105263157895,
+    "held": 0.6842105263157895,
+    "loc": 0.9574911305869016,
+    "simple": 0.36585365853658536,
+    "smooth": 0.25
+   },
+   "score": 0.6499458775469569,
+   "rank": 3
+  },
+  {
+   "id": "M01",
+   "title": "custom spline base + keyframe radius + cubic twist (k1, k2, max angle)",
+   "folder": "M01_spline_cubic",
+   "n_params": 15,
+   "settings": {
+    "N": 22,
+    "H": 2.4,
+    "placement": "angle_half",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "uniform_z",
+     "count": 11
+    }
+   },
+   "source": "../BaseScript (bez_points, generate_shell_triangles_by_count, 11 sections); twist = calculate_bezier_twist",
+   "kernel": 3,
+   "built": {
+    "front_pass": 10,
+    "v34_pass": 13,
+    "sil_max": 2.093814100446707,
+    "rib_mean": 0.43279830686055676,
+    "within1": 92.48618784530387,
+    "rib_max": 6.7977985130485195,
+    "v34_mean": 0.8311234565082024,
+    "v34_max": 4.285188815192708,
+    "n_rib": 905
+   },
+   "exact": {
+    "front_pass": 12,
+    "v34_pass": 13,
+    "sil_max": 2.0724008686999866,
+    "rib_mean": 0.4646209788629849,
+    "within1": 90.82872928176795,
+    "rib_max": 6.79194742572767,
+    "v34_mean": 0.7457483010271702,
+    "v34_max": 3.68570508377633,
+    "n_rib": 905
+   },
+   "seg_front": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "seg_v34": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "seg_front_exact": [
+    false,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "seg_rib_mean": [
+    0.29931043756503606,
+    0.12984659861760503,
+    0.1490834091605954,
+    0.24761639695673757,
+    0.30447695190761714,
+    0.3711642234258857,
+    0.45858905466947675,
+    0.6443772313337843,
+    1.0608981260522359,
+    0.795090496703954,
+    0.664213001014323,
+    0.6580591552334218,
+    0.5550113463705744,
+    0.43637751673691627,
+    0.3210463250377443,
+    0.37725103245105923,
+    0.4115059917966594,
+    0.43356066139423777,
+    0.3623057803095744
+   ],
+   "seg_v34_mean": [
+    2.4751887806037796,
+    1.3777808914208691,
+    1.6180533881875787,
+    1.1106511202004588,
+    0.8569030979263558,
+    0.9454950171605652,
+    0.5104186955694037,
+    0.21289491426698362,
+    0.49560708812467347,
+    0.5515529980321628,
+    0.6787747329380668,
+    0.6442892577180791,
+    0.6884019852828295,
+    0.4998630621397408,
+    0.3967786527834478,
+    0.5475376199767625,
+    0.44706529090542674,
+    0.4316198869553145,
+    0.6944808859046646
+   ],
+   "seg_sil_max": [
+    2.093814100446707,
+    1.025736194538581,
+    0.5618729438050423,
+    0.33473076689968195,
+    0.1961161679299721,
+    0.16143662001802284,
+    0.1336085254226873,
+    0.19173063587356864,
+    0.2897811439940057,
+    0.2897811439940057,
+    0.7736292946650849,
+    0.30746038373601436,
+    0.3613068453422983,
+    0.14586984328514063,
+    0.11816676668223636,
+    0.1863360587224463,
+    0.25346997520776426,
+    0.7488887505664579,
+    1.3535950379714095
+   ],
+   "locality": 0.4459385791033284,
+   "locality_twist": 0.2624147550326964,
+   "locality_radius": 0.6294624031739604,
+   "smooth": {
+    "r0_inflections": 2,
+    "twist_inflections": 1,
+    "extra": 0,
+    "score": 1.0
+   },
+   "constraints": [],
+   "loft_dev_20": 0.03548511568864399,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 91.12346427256604,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M01_E0",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 91.6219558112282,
+      "nfev": 21,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 91.12346427256604,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 91.18899065378717,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 91.15840397901258,
+      "nfev": 13,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 91.2472192094082,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 91.22572549558642,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 91.27012613114903,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 91.21207039249613,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 91.18467932615499,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 91.2938572110041,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 91.30933547200254,
+      "nfev": 13,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 91.24092657335903,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 91.15208429194236,
+      "nfev": 21,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 91.22722112663448,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 123.7
+   },
+   "components": {
+    "fit": 0.5263157894736842,
+    "held": 0.6842105263157895,
+    "loc": 0.4459385791033284,
+    "simple": 0.6666666666666666,
+    "smooth": 1.0
+   },
+   "score": 0.6230311377426923,
+   "rank": 4
+  },
+  {
+   "id": "M04",
+   "title": "custom spline base + keyframe radius + keyframe twist (Catmull-Rom, refined per segment)",
+   "folder": "M04_spline_keyframes",
+   "n_params": 22,
+   "settings": {
+    "N": 22,
+    "H": 2.4,
+    "placement": "angle_half",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "list",
+     "z": [
+      0.0,
+      19.0,
+      38.0,
+      57.0,
+      76.0,
+      95.0,
+      114.0,
+      133.0,
+      152.0,
+      171.0,
+      190.0
+     ]
+    }
+   },
+   "source": "../BaseScript (bez_points, angle_points, smooth_spline_interpolation, generate_shell_triangles_by_count, sections on the keys); refinement rule docs/05 \u00a75.2",
+   "kernel": 3,
+   "built": {
+    "front_pass": 10,
+    "v34_pass": 13,
+    "sil_max": 2.0733112199873176,
+    "rib_mean": 0.4365946314808156,
+    "within1": 92.707182320442,
+    "rib_max": 6.779372431139166,
+    "v34_mean": 0.8221073536304513,
+    "v34_max": 4.214327192514063,
+    "n_rib": 905
+   },
+   "exact": {
+    "front_pass": 12,
+    "v34_pass": 11,
+    "sil_max": 2.0479986754040453,
+    "rib_mean": 0.4672349994342256,
+    "within1": 90.93922651933701,
+    "rib_max": 6.784943771772518,
+    "v34_mean": 0.7751309687663112,
+    "v34_max": 3.407506306605016,
+    "n_rib": 905
+   },
+   "seg_front": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "seg_v34": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "seg_front_exact": [
+    false,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "seg_rib_mean": [
+    0.3249521276020025,
+    0.14236653269684493,
+    0.1446610724253418,
+    0.2445795878506859,
+    0.2983857533682567,
+    0.37086746927204317,
+    0.4579169150177064,
+    0.6426205288875017,
+    1.06085052935791,
+    0.798002436130177,
+    0.6605035555760442,
+    0.653864335512607,
+    0.557098682271219,
+    0.43905989881070623,
+    0.32849705520158345,
+    0.3853549356406319,
+    0.41427848707162557,
+    0.43059188879736715,
+    0.42525877035118853
+   ],
+   "seg_v34_mean": [
+    2.642465347713852,
+    1.3435069160673745,
+    1.5294730638423368,
+    1.0069027925883545,
+    0.8113518462736039,
+    0.8929265398587823,
+    0.43467845415528444,
+    0.3966870590280358,
+    0.38065782078104865,
+    0.5976901702971957,
+    0.6180824157449295,
+    0.6231088950994429,
+    0.5757237038485238,
+    0.4948707330709553,
+    0.44128218524017276,
+    0.6184685488920226,
+    0.4687445440501431,
+    0.5602882346710213,
+    0.6092668927135353
+   ],
+   "seg_sil_max": [
+    2.0733112199873176,
+    1.0244800781220391,
+    0.5595993212325396,
+    0.3247267187154961,
+    0.1920322040318041,
+    0.16654309704343007,
+    0.1493690958042464,
+    0.18056044129669147,
+    0.2719562014333121,
+    0.2719562014333121,
+    0.7947238742153928,
+    0.3128971340762945,
+    0.34785877133900556,
+    0.14005381773429804,
+    0.11461867037755269,
+    0.20455074368048543,
+    0.27407634860706764,
+    0.7367903067945107,
+    1.2829824930103868
+   ],
+   "locality": 0.6294624287718613,
+   "locality_twist": 0.6294624543697956,
+   "locality_radius": 0.6294624031739269,
+   "smooth": {
+    "r0_inflections": 2,
+    "twist_inflections": 3,
+    "extra": 2,
+    "score": 0.5
+   },
+   "constraints": [],
+   "loft_dev_20": 0.04695598909297871,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 90.72386142144047,
+    "nfev": 18,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M03_E0v2",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 91.0729344688637,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 90.95055733599432,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 90.87393875568009,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 90.86201991077994,
+      "nfev": 26,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 91.00829784070193,
+      "nfev": 13,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 90.91848378836588,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 90.72386142144047,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 91.09981626114117,
+      "nfev": 25,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 90.99644683070682,
+      "nfev": 13,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 90.98314480651119,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 90.94507064106318,
+      "nfev": 22,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 90.78965973748807,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 90.89957435798812,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 90.91214560052026,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 167.9
+   },
+   "components": {
+    "fit": 0.5263157894736842,
+    "held": 0.6842105263157895,
+    "loc": 0.6294624287718613,
+    "simple": 0.5769230769230769,
+    "smooth": 0.5
+   },
+   "score": 0.5915853562186132,
+   "rank": 5
+  },
+  {
+   "id": "M05",
+   "title": "rose k(z) + 2D Bezier radius + Bezier twist",
+   "folder": "M05_rose_bezier",
+   "n_params": 28,
+   "settings": {
+    "N": 22,
+    "H": 3.0,
+    "placement": "arc",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "uniform_z",
+     "count": 15
+    }
+   },
+   "source": "Grasshoper_full/ (this repo)",
+   "kernel": 3,
+   "built": {
+    "front_pass": 6,
+    "v34_pass": 10,
+    "sil_max": 1.5281420803191992,
+    "rib_mean": 0.6691669321567568,
+    "within1": 78.98230088495575,
+    "rib_max": 6.350491552976564,
+    "v34_mean": 0.9025578035829885,
+    "v34_max": 3.9073267984998754,
+    "n_rib": 904
+   },
+   "exact": {
+    "front_pass": 6,
+    "v34_pass": 10,
+    "sil_max": 1.5411272604488033,
+    "rib_mean": 0.668898925367868,
+    "within1": 78.8716814159292,
+    "rib_max": 6.308298341598018,
+    "v34_mean": 0.9052835615263025,
+    "v34_max": 3.754088568248571,
+    "n_rib": 904
+   },
+   "seg_front": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_v34": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "seg_front_exact": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_rib_mean": [
+    0.24259032261376878,
+    0.3766745801204555,
+    0.26247187432643865,
+    0.27420412365449537,
+    0.3518919662828742,
+    0.48103738554453157,
+    0.512968354312964,
+    0.8950107834431241,
+    1.3975437771467618,
+    1.1473904333544278,
+    0.9452477149374608,
+    0.9887002335351139,
+    1.033780176203604,
+    0.8746763118668114,
+    0.800716019852388,
+    0.9459384492104796,
+    0.9499804234462238,
+    0.9408287914297645,
+    0.884359280778662
+   ],
+   "seg_v34_mean": [
+    1.7047741932601785,
+    0.48740902628949717,
+    0.8211543218308704,
+    0.839991957794155,
+    0.968162937988435,
+    0.8875034721499376,
+    0.5483694472428496,
+    1.0509571128972581,
+    1.7121041302066176,
+    1.4537008804250589,
+    0.6469539560549529,
+    0.6940317181739203,
+    0.725094898445176,
+    0.6603884359826939,
+    0.6256508566953004,
+    0.610798855801838,
+    0.6210970863779564,
+    0.607381762165015,
+    0.8823865171101907
+   ],
+   "seg_sil_max": [
+    1.5281420803191992,
+    0.451354037852127,
+    0.2882975446442657,
+    0.2824825030894971,
+    0.1497732952698101,
+    0.18043276991012647,
+    0.16878391760603506,
+    0.17343996005287465,
+    0.39717465466503654,
+    0.39717465466503654,
+    0.4958794766714334,
+    0.24664405281684765,
+    0.1501886630123579,
+    0.3385593878891342,
+    0.33232652547769703,
+    0.24360943441836014,
+    0.2685608648055364,
+    0.19773701988383152,
+    0.14446926427277873
+   ],
+   "locality": 0.48142985218839185,
+   "locality_twist": 0.3745491591424253,
+   "locality_radius": 0.5883105452343584,
+   "smooth": {
+    "r0_inflections": 0,
+    "twist_inflections": 1,
+    "extra": 0,
+    "score": 1.0
+   },
+   "constraints": [],
+   "loft_dev_20": 0.005114295371427602,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 160.26460835210975,
+    "nfev": 25,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M10_E0v2",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 164.86116076131458,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 162.97072265316652,
+      "nfev": 20,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 166.55488991009716,
+      "nfev": 20,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 189.87668895885213,
+      "nfev": 22,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 166.3985215012324,
+      "nfev": 20,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 176.13243148588947,
+      "nfev": 20,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 167.92156645872046,
+      "nfev": 24,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 169.2377891907739,
+      "nfev": 23,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 163.26536441513593,
+      "nfev": 21,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 167.45797555422013,
+      "nfev": 23,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 162.40911393260004,
+      "nfev": 21,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 169.29195981223208,
+      "nfev": 41,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 163.8053918115699,
+      "nfev": 21,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 160.26460835210975,
+      "nfev": 25,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 274.0
+   },
+   "components": {
+    "fit": 0.3157894736842105,
+    "held": 0.5263157894736842,
+    "loc": 0.48142985218839185,
+    "simple": 0.5172413793103449,
+    "smooth": 1.0
+   },
+   "score": 0.4923596683908722,
+   "rank": 6
+  },
+  {
+   "id": "M06",
+   "title": "rose k(z) + 10 mm knots radius + 10 mm knots twist",
+   "folder": "M06_rose_knots",
+   "n_params": 46,
+   "settings": {
+    "N": 22,
+    "H": 3.0,
+    "placement": "arc",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "knots10"
+    }
+   },
+   "source": "new model; settings inherit M05 (Grasshoper_full/), sections on the 10 mm knots",
+   "kernel": 3,
+   "built": {
+    "front_pass": 7,
+    "v34_pass": 10,
+    "sil_max": 2.487587232766586,
+    "rib_mean": 0.663025981957107,
+    "within1": 78.31858407079646,
+    "rib_max": 6.138779172695578,
+    "v34_mean": 0.939508897413197,
+    "v34_max": 4.09744023534534,
+    "n_rib": 904
+   },
+   "exact": {
+    "front_pass": 7,
+    "v34_pass": 10,
+    "sil_max": 2.487587232766586,
+    "rib_mean": 0.6630099195587505,
+    "within1": 78.53982300884957,
+    "rib_max": 6.151463776911228,
+    "v34_mean": 0.9347895367938069,
+    "v34_max": 4.006930974623767,
+    "n_rib": 904
+   },
+   "seg_front": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_v34": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "seg_front_exact": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_rib_mean": [
+    0.28466866102526633,
+    0.31479434718107846,
+    0.2367789512964291,
+    0.29958048504856466,
+    0.3827068644401633,
+    0.5121505556484354,
+    0.5377438637125148,
+    0.9125396373985943,
+    1.4391599351226956,
+    1.2067523984480337,
+    0.9462873234265766,
+    0.9602981176312019,
+    0.972629651718283,
+    0.803756549877789,
+    0.7093474652982691,
+    0.8182788491651348,
+    0.9072230236048772,
+    0.8929995950364895,
+    0.8833531219335725
+   ],
+   "seg_v34_mean": [
+    2.0243074477110863,
+    0.4844576349604075,
+    0.8472341286688029,
+    1.2615691538866793,
+    1.4520484947916,
+    0.7376784201853805,
+    0.4939518683181634,
+    1.1416869721346325,
+    1.7836516044762354,
+    1.4794770937693562,
+    0.6087909640662748,
+    0.5940893358701198,
+    0.8390279035268169,
+    0.8350387920363027,
+    0.5655661739700014,
+    0.4910895460599442,
+    0.5894933474837367,
+    0.4209334239628637,
+    0.6153047703267039
+   ],
+   "seg_sil_max": [
+    2.487587232766586,
+    0.5368652540362149,
+    0.28649672016024397,
+    0.17262993140785454,
+    0.04148926405696329,
+    0.1059826902920804,
+    0.13099263782034143,
+    0.1984200919604291,
+    0.32633835151119683,
+    0.4778297914691336,
+    0.5445141947736403,
+    0.22373504380978204,
+    0.1481961829199605,
+    0.16407701597670155,
+    0.26847522217629205,
+    0.3295881462125436,
+    0.17945498666604465,
+    0.32358040445871694,
+    0.5063810385499039
+   ],
+   "locality": 0.9574911193032192,
+   "locality_twist": 0.9574915429539507,
+   "locality_radius": 0.9574906956524878,
+   "smooth": {
+    "r0_inflections": 4,
+    "twist_inflections": 8,
+    "extra": 9,
+    "score": 0.18181818181818182
+   },
+   "constraints": [],
+   "loft_dev_20": 0.06359250737840227,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 159.9689585675094,
+    "nfev": 15,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M04_E0v2",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 160.7009013644404,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 162.00278814677756,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 163.54254883088964,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 161.19146289670837,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 160.37721937294435,
+      "nfev": 13,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 160.54514538843964,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 163.52588935530463,
+      "nfev": 42,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 159.9689585675094,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 160.86638013929542,
+      "nfev": 28,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 162.98249745112403,
+      "nfev": 21,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 167.13922882092353,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 160.45853357431497,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 164.68008572306758,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 162.81421064498758,
+      "nfev": 22,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 412.4
+   },
+   "components": {
+    "fit": 0.3684210526315789,
+    "held": 0.5263157894736842,
+    "loc": 0.9574911193032192,
+    "simple": 0.39473684210526316,
+    "smooth": 0.18181818181818182
+   },
+   "score": 0.4881212755509852,
+   "rank": 7
+  },
+  {
+   "id": "M10",
+   "title": "rose k(z) + 10 mm knots radius + 10 mm knots rib lean angle (twist = integral tan(alpha)/r0)",
+   "folder": "M10_rose_ribangle",
+   "n_params": 47,
+   "settings": {
+    "N": 22,
+    "H": 3.0,
+    "placement": "arc",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "knots10"
+    }
+   },
+   "source": "new model; settings inherit M05 (Grasshoper_full/), sections on the 10 mm knots",
+   "kernel": 3,
+   "built": {
+    "front_pass": 5,
+    "v34_pass": 10,
+    "sil_max": 2.4836762770792262,
+    "rib_mean": 0.65660012935619,
+    "within1": 77.98672566371681,
+    "rib_max": 5.896839570771519,
+    "v34_mean": 0.9355899680595667,
+    "v34_max": 4.279373489535647,
+    "n_rib": 904
+   },
+   "exact": {
+    "front_pass": 5,
+    "v34_pass": 10,
+    "sil_max": 2.4836762770792262,
+    "rib_mean": 0.6629989079068537,
+    "within1": 78.429203539823,
+    "rib_max": 5.90885974548236,
+    "v34_mean": 0.9199913888696778,
+    "v34_max": 3.9005625757460822,
+    "n_rib": 904
+   },
+   "seg_front": [
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_v34": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "seg_front_exact": [
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_rib_mean": [
+    0.19377896774816092,
+    0.2893963462210231,
+    0.23141419021077644,
+    0.29565511745831635,
+    0.3716686833437162,
+    0.4968200196933265,
+    0.5201339349557804,
+    0.877825806810182,
+    1.387086657737075,
+    1.1358362171634058,
+    0.9220145700438049,
+    0.9982499116345329,
+    1.0316417538594547,
+    0.8648878679768432,
+    0.7850750845107791,
+    0.8982642676703709,
+    0.9719296958331215,
+    0.9432510448419106,
+    0.8935705577513221
+   ],
+   "seg_v34_mean": [
+    2.176812801919319,
+    0.5062306711398696,
+    0.8893015952588115,
+    1.039445028687708,
+    1.0711565497383317,
+    0.7594884819491732,
+    0.5980966834300946,
+    1.2123712567884084,
+    1.877169554509793,
+    1.6272784659848416,
+    0.6534886624466534,
+    0.5643566271398046,
+    0.9486415375391982,
+    0.6461533016651994,
+    0.6515091079696046,
+    0.47444161127552864,
+    0.45897091957205877,
+    0.32561463754476594,
+    0.40185189435991475
+   ],
+   "seg_sil_max": [
+    2.4836762770792262,
+    0.5319140435844218,
+    0.3291762011581909,
+    0.17865846712678035,
+    0.05378263078958412,
+    0.0954089431839833,
+    0.12916095254615811,
+    0.19838134127962803,
+    0.28954633140769204,
+    0.5168297702955016,
+    0.5374178434595507,
+    0.1924412634535173,
+    0.11378431662433286,
+    0.17831794246920651,
+    0.2639176950510347,
+    0.3201652781879858,
+    0.18076776843231812,
+    0.3245107802003986,
+    0.5124019836825155
+   ],
+   "locality": 0.871486764620863,
+   "locality_twist": 0.7854813975865559,
+   "locality_radius": 0.9574921316551702,
+   "smooth": {
+    "r0_inflections": 4,
+    "twist_inflections": 3,
+    "extra": 4,
+    "score": 0.3333333333333333
+   },
+   "constraints": [],
+   "loft_dev_20": 0.058698121760002664,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 159.8256469098173,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M01_E0",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 165.81338025886032,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 159.8256469098173,
+      "nfev": 14,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 164.60047914335547,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 161.00287424145165,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 159.92893670612125,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 160.94319935814076,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 162.11051720827882,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 160.58653608135114,
+      "nfev": 19,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 161.78422758720342,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 159.95873413913463,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 162.74423471157678,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 160.8980744565825,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 163.84451580259187,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 160.15525427413584,
+      "nfev": 15,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 376.9
+   },
+   "components": {
+    "fit": 0.2631578947368421,
+    "held": 0.5263157894736842,
+    "loc": 0.871486764620863,
+    "simple": 0.38961038961038963,
+    "smooth": 0.3333333333333333
+   },
+   "score": 0.4530173869875017,
+   "rank": 8
+  },
+  {
+   "id": "M08",
+   "title": "superformula n1(z), n2(z) + 10 mm knots radius + 10 mm knots twist",
+   "folder": "M08_superformula_knots",
+   "n_params": 52,
+   "settings": {
+    "N": 22,
+    "H": 3.0,
+    "placement": "arc",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "knots10"
+    }
+   },
+   "source": "new model; settings inherit M05 (Grasshoper_full/), sections on the 10 mm knots",
+   "kernel": 3,
+   "built": {
+    "front_pass": 5,
+    "v34_pass": 10,
+    "sil_max": 2.5388183858008233,
+    "rib_mean": 0.7075666255371456,
+    "within1": 75.1937984496124,
+    "rib_max": 5.395162721549639,
+    "v34_mean": 0.9825982654249401,
+    "v34_max": 3.9904268310836346,
+    "n_rib": 903
+   },
+   "exact": {
+    "front_pass": 6,
+    "v34_pass": 9,
+    "sil_max": 2.5388183858008233,
+    "rib_mean": 0.7062639646469994,
+    "within1": 75.30454042081949,
+    "rib_max": 5.430611317643113,
+    "v34_mean": 0.9597827491385736,
+    "v34_max": 3.836653085882882,
+    "n_rib": 903
+   },
+   "seg_front": [
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_v34": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "seg_front_exact": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_rib_mean": [
+    0.3304796027140368,
+    0.37000255403166005,
+    0.22783975171287316,
+    0.287857135099896,
+    0.3787869008685482,
+    0.5107029634019814,
+    0.5709899952609963,
+    0.9829130854326692,
+    1.4876916804539215,
+    1.1838301681721322,
+    1.0110008045177774,
+    1.127259646143662,
+    1.129316136484923,
+    0.9220899191496696,
+    0.8158951390252988,
+    0.8588615291688515,
+    0.9540946156826848,
+    0.9374873589465037,
+    0.9762128954467907
+   ],
+   "seg_v34_mean": [
+    2.0356614083338123,
+    0.4161911551185199,
+    0.9338761498078928,
+    1.207391887992705,
+    1.511342205610912,
+    0.6267089431213198,
+    0.5463995017257557,
+    1.2855385903140852,
+    1.9015844920157743,
+    1.2557503801394603,
+    0.603642497541173,
+    0.6503544008375619,
+    1.105090195471281,
+    1.0270419374887352,
+    0.6228259825069167,
+    0.7444933826018568,
+    0.6061929473930003,
+    0.4490329693928282,
+    0.5413795193393658
+   ],
+   "seg_sil_max": [
+    2.5388183858008233,
+    0.5356025573188674,
+    0.3015207408374323,
+    0.15619754191193636,
+    0.029499919941187613,
+    0.10942353827876161,
+    0.13992227912365252,
+    0.22561727756523453,
+    0.28351646084931303,
+    0.3281035352719357,
+    0.29696909821745976,
+    0.15217806127633082,
+    0.1616607813437696,
+    0.153870715992241,
+    0.3193476316823336,
+    0.34761791872546155,
+    0.17966308495128658,
+    0.3221765077372041,
+    0.5052082485553839
+   ],
+   "locality": 0.9574911056022791,
+   "locality_twist": 0.9574915155523094,
+   "locality_radius": 0.9574906956522489,
+   "smooth": {
+    "r0_inflections": 4,
+    "twist_inflections": 6,
+    "extra": 7,
+    "score": 0.2222222222222222
+   },
+   "constraints": [],
+   "loft_dev_20": 0.08036060426279334,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 175.648039281091,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M05_E0v2",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 181.57527962427238,
+      "nfev": 19,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 177.4862109104812,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 178.16647842046675,
+      "nfev": 19,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 179.0850962680976,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 179.7103432237566,
+      "nfev": 22,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 181.6603612216818,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 177.7598967165273,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 181.75457081862666,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 175.648039281091,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 181.68642016888145,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 178.75411134770354,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 177.3760059502378,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 202.96899445116225,
+      "nfev": 16,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 178.73629440896585,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 663.4
+   },
+   "components": {
+    "fit": 0.2631578947368421,
+    "held": 0.5263157894736842,
+    "loc": 0.9574911056022791,
+    "simple": 0.36585365853658536,
+    "smooth": 0.2222222222222222
+   },
+   "score": 0.45243125391622263,
+   "rank": 9
+  },
+  {
+   "id": "M09",
+   "title": "rose (constant k) + 2D Bezier radius + logistic twist",
+   "folder": "M09_rose_logistic",
+   "n_params": 19,
+   "settings": {
+    "N": 22,
+    "H": 3.0,
+    "placement": "arc",
+    "target_w": 9.0,
+    "sections": {
+     "mode": "uniform_z",
+     "count": 15
+    }
+   },
+   "source": "new model; settings inherit M05 (Grasshoper_full/ in this repo), M05 own sections (15 uniform z)",
+   "kernel": 3,
+   "built": {
+    "front_pass": 1,
+    "v34_pass": 7,
+    "sil_max": 0.9941426273983325,
+    "rib_mean": 0.9717036548697602,
+    "within1": 62.09944751381216,
+    "rib_max": 8.08125791563073,
+    "v34_mean": 0.8528197041025648,
+    "v34_max": 3.640230369915433,
+    "n_rib": 905
+   },
+   "exact": {
+    "front_pass": 1,
+    "v34_pass": 7,
+    "sil_max": 0.9781040644601546,
+    "rib_mean": 0.9723506688398756,
+    "within1": 61.546961325966855,
+    "rib_max": 8.10195280443439,
+    "v34_mean": 0.8503626924722523,
+    "v34_max": 3.645452640313653,
+    "n_rib": 905
+   },
+   "seg_front": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_v34": [
+    false,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true
+   ],
+   "seg_front_exact": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "seg_rib_mean": [
+    0.347133231533466,
+    1.0083615229303013,
+    1.2089906806230344,
+    0.9502687308104871,
+    0.5113774918048327,
+    0.5155034678804297,
+    0.8311170840068558,
+    1.291865965638562,
+    1.691380228353162,
+    1.2934480083334754,
+    1.0551999664321867,
+    1.201131051639111,
+    1.1020628795985463,
+    0.9821281531608435,
+    0.9234514531020639,
+    0.9817081085812593,
+    0.9752030481145195,
+    1.0388969232768364,
+    1.0413993714219958
+   ],
+   "seg_v34_mean": [
+    1.1924616246023856,
+    0.4435151990108922,
+    0.559869368066467,
+    0.9016917892828353,
+    0.8920605474755435,
+    0.9055434972510612,
+    0.38783494617616576,
+    0.8145309297208866,
+    1.8266484977711221,
+    1.6847896393401474,
+    0.9331875564852782,
+    0.6713372075730987,
+    0.901343871060286,
+    0.8164404364932633,
+    0.9990178750316576,
+    0.765827959231144,
+    0.3253641688913183,
+    0.31790602146408764,
+    0.4675525862976529
+   ],
+   "seg_sil_max": [
+    0.9851588480060371,
+    0.2946374780809151,
+    0.1893829471386539,
+    0.17675008883625765,
+    0.08764950379993763,
+    0.11067507818808053,
+    0.22177754962720542,
+    0.19169780774896594,
+    0.2737408818959892,
+    0.8210853336767769,
+    0.9941426273983325,
+    0.28718890905224725,
+    0.3513275141718708,
+    0.2444382721947278,
+    0.23811994352215038,
+    0.2680172261809446,
+    0.35491450586305007,
+    0.3404582674593044,
+    0.29463472247864075
+   ],
+   "locality": 0.4184412491161606,
+   "locality_twist": 0.2664975990440944,
+   "locality_radius": 0.5703848991882268,
+   "smooth": {
+    "r0_inflections": 0,
+    "twist_inflections": 1,
+    "extra": 0,
+    "score": 1.0
+   },
+   "constraints": [],
+   "loft_dev_20": 0.003935475770845187,
+   "loft_gate_sections": 39,
+   "buildable": true,
+   "fit": {
+    "cost": 262.1104768491381,
+    "nfev": 19,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ],
+    "best_start": "pool:M01_E0v2",
+    "starts": [
+     {
+      "start": "own start (P0)",
+      "cost": 263.8657531213035,
+      "nfev": 34,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0",
+      "cost": 262.84907935856717,
+      "nfev": 22,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0",
+      "cost": 265.4003575278683,
+      "nfev": 23,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_X1c",
+      "cost": 278.9507609085686,
+      "nfev": 27,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M01_E0v2",
+      "cost": 262.1104768491381,
+      "nfev": 19,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M02_E0v2",
+      "cost": 278.4121197796369,
+      "nfev": 25,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M03_E0v2",
+      "cost": 271.802751188461,
+      "nfev": 44,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M04_E0v2",
+      "cost": 269.58197623397973,
+      "nfev": 25,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M05_E0v2",
+      "cost": 264.5357679130127,
+      "nfev": 22,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M06_E0v2",
+      "cost": 264.1774533378272,
+      "nfev": 28,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M07_E0v2",
+      "cost": 263.9779181683325,
+      "nfev": 17,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M08_E0v2",
+      "cost": 262.54138273242415,
+      "nfev": 23,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M09_E0v2",
+      "cost": 265.3452237594982,
+      "nfev": 30,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     },
+     {
+      "start": "pool:M10_E0v2",
+      "cost": 262.98565013278176,
+      "nfev": 18,
+      "cap_hit": [
+       false,
+       false,
+       false
+      ]
+     }
+    ],
+    "fit_seconds": 196.1
+   },
+   "components": {
+    "fit": 0.05263157894736842,
+    "held": 0.3684210526315789,
+    "loc": 0.4184412491161606,
+    "simple": 0.6122448979591837,
+    "smooth": 1.0
+   },
+   "score": 0.3529380455843951,
+   "rank": 10
+  }
+ ],
+ "gated": []
+}

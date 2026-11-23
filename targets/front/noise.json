@@ -1,0 +1,54 @@
+{
+ "outline": {
+  "axis_offset_mm": 0.131,
+  "lr_asym_mean_abs_mm": 0.06,
+  "lr_asym_p95_mm": 0.171,
+  "half_width_noise_mean_mm": 0.03,
+  "per_segment_half_width_noise_mm": {
+   "S01": 0.046,
+   "S02": 0.047,
+   "S03": 0.025,
+   "S04": 0.019,
+   "S05": 0.045,
+   "S06": 0.02,
+   "S07": 0.027,
+   "S08": 0.025,
+   "S09": 0.025,
+   "S10": 0.022,
+   "S11": 0.039,
+   "S12": 0.045,
+   "S13": 0.019,
+   "S14": 0.022,
+   "S15": 0.027,
+   "S16": 0.028,
+   "S17": 0.02,
+   "S18": 0.016,
+   "S19": 0.057
+  }
+ },
+ "ribs": {
+  "tracer_spread_mean_mm": 0.253,
+  "tracer_spread_p95_mm": 2.799,
+  "frac_spread_over_1mm": 0.085
+ },
+ "rib_count": {
+  "samples": [
+   {
+    "z": 20.0,
+    "peaks_in_50mm": 16,
+    "spacing_mm": 3.125
+   },
+   {
+    "z": 40.0,
+    "peaks_in_50mm": 14,
+    "spacing_mm": 3.571
+   },
+   {
+    "z": 60.0,
+    "peaks_in_50mm": 12,
+    "spacing_mm": 4.167
+   }
+  ],
+  "note": "ribs per quarter = quarter arc length / spacing; see study log"
+ }
+}

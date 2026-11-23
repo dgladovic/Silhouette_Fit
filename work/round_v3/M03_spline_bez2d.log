@@ -1,0 +1,15 @@
+
+== E0_fit: exit 0, 196 s
+
+== E1_tri_count: exit 0, 198 s
+
+== E2_tri_width: exit 0, 200 s
+
+== E3_tri_height: exit 0, 203 s
+
+== E4_twist: exit 0, 207 s
+
+== E5_radius: exit 0, 212 s
+
+== E6_sections: exit 0, 215 s
+{'front_pass': 14, 'v34_pass': 14, 'sil_max': 0.7606595831183967, 'rib_mean': 0.42726331769667103, 'within1': 91.83222958057395, 'rib_max': 6.58222126953406, 'v34_mean': 0.7434286557097558, 'v34_max': 3.2890531869986113, 'n_rib': 906}

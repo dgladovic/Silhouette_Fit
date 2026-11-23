@@ -1,0 +1,6 @@
+{
+ "H": 750,
+ "W": 705,
+ "row_cut": 590,
+ "note": "mask = largest dark-closed blob (same as views/fit_view34.py)"
+}

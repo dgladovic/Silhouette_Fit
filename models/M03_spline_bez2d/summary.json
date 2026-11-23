@@ -1,0 +1,332 @@
+{
+ "id": "M03",
+ "title": "custom spline base + 7-point 2D Bezier radius + cubic twist at Bezier t",
+ "folder": "M03_spline_bez2d",
+ "n_params": 16,
+ "settings": {
+  "N": 23,
+  "H": 2.0,
+  "placement": "angle_half",
+  "target_w": 9.0,
+  "sections": {
+   "mode": "bezier_t",
+   "count": 30
+  }
+ },
+ "source": "../FulLTextureLamp (calculate_2d_bezier_profile_7, calculate_bezier_twist at Bezier t, generate_polar_triangles_by_count N 23 / 0.20 cm, 30 sections uniform in t); base = custom spline per scenario",
+ "kernel": 3,
+ "built": {
+  "front_pass": 14,
+  "v34_pass": 14,
+  "sil_max": 0.7606595831183967,
+  "rib_mean": 0.42726331769667103,
+  "within1": 91.83222958057395,
+  "rib_max": 6.58222126953406,
+  "v34_mean": 0.7434286557097558,
+  "v34_max": 3.2890531869986113,
+  "n_rib": 906
+ },
+ "exact": {
+  "front_pass": 14,
+  "v34_pass": 13,
+  "sil_max": 0.7605515724717833,
+  "rib_mean": 0.4272580993386681,
+  "within1": 91.83222958057395,
+  "rib_max": 6.582157532048029,
+  "v34_mean": 0.7603713283771444,
+  "v34_max": 3.29394380349311,
+  "n_rib": 906
+ },
+ "seg_front": [
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "seg_v34": [
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false
+ ],
+ "seg_front_exact": [
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "seg_rib_mean": [
+  0.12840270798541764,
+  0.18570508265118943,
+  0.180632456384749,
+  0.2449472063669728,
+  0.2802826111869813,
+  0.34984981995572234,
+  0.4387196713686609,
+  0.5961956387637734,
+  1.0166239385676314,
+  0.7687107196573362,
+  0.6786410463536784,
+  0.7090588034116394,
+  0.611822648482296,
+  0.4810565604793458,
+  0.35029462308772563,
+  0.3651700130356976,
+  0.3968647170716365,
+  0.4537149818702841,
+  0.44974474931853226
+ ],
+ "seg_v34_mean": [
+  1.8426312568528826,
+  1.159634969979476,
+  1.1250640388388802,
+  0.9527665139649544,
+  0.6246246437451671,
+  0.7318342448261315,
+  0.41928967914086457,
+  0.2937097235783258,
+  0.4429159800440407,
+  0.5162685179785232,
+  0.6022456363613466,
+  0.5450023978255368,
+  0.5399321539934406,
+  0.49405940189815134,
+  0.5254026991634825,
+  0.4966373333359938,
+  0.4413388530474851,
+  0.5674987227622051,
+  1.018120224804502
+ ],
+ "seg_sil_max": [
+  0.6961263143737284,
+  0.3237906828560426,
+  0.23283030004070326,
+  0.18730287027626957,
+  0.1773825429642244,
+  0.16955259802928424,
+  0.15819032450471582,
+  0.1957892403416679,
+  0.3139184817854357,
+  0.25653610532522464,
+  0.7606595831183967,
+  0.4487914765552574,
+  0.3416098381394619,
+  0.16949775357562658,
+  0.1438788597851186,
+  0.09869720913695801,
+  0.14210596203183457,
+  0.2152291670067754,
+  0.2152291670067754
+ ],
+ "locality": 0.41524656381196423,
+ "locality_twist": 0.41550367801616517,
+ "locality_radius": 0.4149894496077633,
+ "smooth": {
+  "r0_inflections": 0,
+  "twist_inflections": 1,
+  "extra": 0,
+  "score": 1.0
+ },
+ "constraints": [],
+ "loft_dev_20": 0.0003623502941110246,
+ "loft_gate_sections": 39,
+ "buildable": true,
+ "fit": {
+  "cost": 72.92101351353884,
+  "nfev": 14,
+  "cap_hit": [
+   false,
+   false,
+   false
+  ],
+  "best_start": "pool:M07_E0v2",
+  "starts": [
+   {
+    "start": "own start (P0)",
+    "cost": 82.1567434473831,
+    "nfev": 18,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M01_E0",
+    "cost": 78.45038838664703,
+    "nfev": 18,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M05_E0",
+    "cost": 73.29748708879109,
+    "nfev": 17,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M02_X1c",
+    "cost": 103.41972600537194,
+    "nfev": 17,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M01_E0v2",
+    "cost": 77.01972694293673,
+    "nfev": 18,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M02_E0v2",
+    "cost": 90.39778731705289,
+    "nfev": 26,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M03_E0v2",
+    "cost": 82.23724320040671,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M04_E0v2",
+    "cost": 78.03546239763978,
+    "nfev": 26,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M05_E0v2",
+    "cost": 74.33029068191533,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M06_E0v2",
+    "cost": 76.22251946804806,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M07_E0v2",
+    "cost": 72.92101351353884,
+    "nfev": 14,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M08_E0v2",
+    "cost": 73.1815331437378,
+    "nfev": 15,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M09_E0v2",
+    "cost": 74.12996245414874,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   {
+    "start": "pool:M10_E0v2",
+    "cost": 73.29934849357535,
+    "nfev": 16,
+    "cap_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  ],
+  "fit_seconds": 194.0
+ }
+}
