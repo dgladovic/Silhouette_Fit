@@ -93,3 +93,6 @@
   M08, M10) stays at 160–176, whatever the radius/twist representation. M08 shows the superformula can't do better than a rose.
 - Known limitation: `project_start` matches only r0/twist; base-shape parameters (k, c, n1/n2) start from the model's P0
   for every pool start. M07 v3 (79.3) is therefore slightly above its v2 cost (74.9). Its pass counts still went up.
+
+### 2026-11-24 — F2: generated Fusion scripts verified
+- M03: Fusion = kernel within 0.007 mm; M02: within 0.21 mm (as built). The table-driven export works; the top 2 are buildable.

@@ -47,3 +47,10 @@ The kernel generated one Fusion script per model (table-driven, one quarter, the
 
 Same rules as F1: a new empty design for each run, move `fusion_dump.txt` after each run, note the build time and any
 warning. Claude then compares each dump with the kernel's as-built prediction (as in Gate B/C).
+
+### F2 results (2026-11-24)
+| Run | Bodies | Outline (maxY) vs kernel as built | Note |
+|---|---|---|---|
+| F2-1 M03 | 23 | **mean 0.003 / max 0.007 mm** | generated script = kernel exactly (30 Bézier-t sections) |
+| F2-2 M02 | 22 | **mean 0.031 / max 0.21 mm** | exact curves differ from the build by up to 1.3 mm at the rim/neck (15 sections); the loft simulator predicted it |
+Both top models pass the buildability gate in real Fusion. The dumps were first saved inside `models/*/fusion/*/fusion_runs/` and then moved here.

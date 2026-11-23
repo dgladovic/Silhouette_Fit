@@ -259,3 +259,6 @@
 ### 2026-11-23 23:14 — final round (kernel v3) — results recorded (kernel v3)
 - rank 2/10, score 0.702; front 14/19, 3/4 13/19, ribs 0.47 mm, cost 94.3 (best start pool:M01_E0)
 - orientation offset -1.66°; MODEL.md: 'Final round — kernel v3' section appended; verified by judge/verify_e0.py
+
+### 2026-11-23 23:32 — Fusion build F2-2 verified (kernel v3)
+- generated script built in Fusion by the user (22 bodies); DumpCanvas outline vs kernel as built: mean 0.031 / max 0.21 mm (exact curves differ up to 1.3 mm at rim/neck with 15 sections; as-built scoring already includes this)

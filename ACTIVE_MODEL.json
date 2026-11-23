@@ -1,0 +1,9 @@
+{
+ "active": "M03",
+ "folder": "models/M03_spline_bez2d",
+ "params": "models/M03_spline_bez2d/E0_fit/params.json",
+ "fusion_script": "models/M03_spline_bez2d/fusion/M03/M03.py",
+ "since": "2026-11-24",
+ "why": "rank 1 in the model study (judge/RESULTS.md); Fusion build F2-1 matches the kernel within 0.007 mm",
+ "previous": "M05 (fit_ribs_result.json + Grasshoper_full/, backup in work/history/2026-11-24_fit_ribs_result_M05_before_M03.json) — kept untouched as reference"
+}

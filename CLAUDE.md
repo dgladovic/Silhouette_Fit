@@ -24,9 +24,10 @@ designer tools) live one level up in `../` (`BaseScript`, `FulLTextureLamp`, `Gr
    the Fusion scripts is really mm.
 2. **One geometry, two copies**: `model.py` replicates the Fusion scripts exactly. Change one → change the other in the
    same task, and flag that a Fusion re-check (DumpCanvas / TwoTriangles) is needed.
-3. **Active fit** = `fit_ribs_result.json`. Only the main session changes it, via: back up to `work/history/` →
-   write → `python apply_ribs_fit.py` → re-measure → update `docs/03_SEGMENTS.md` §3.4 + `PROGRESS.md`.
-   Never hand-edit fitted numbers in the Fusion scripts.
+3. **Active model** = `ACTIVE_MODEL.json` → **M03** (`models/M03_spline_bez2d`, since 2026-11-24). Change it only via the
+   segment loop: candidate in `work/candidates/` → `fit-verifier` → copy to `E0_fit/params.json` (back up first to
+   `work/history/`) → re-export the Fusion script (`fusion_template.export`) → log in the model's `PROGRESS.md`.
+   The old rose pipeline (`fit_ribs_result.json`, `apply_ribs_fit.py`, `Grasshoper_full/`) is M05, kept as reference only.
 4. **Per-segment reporting**: every result is shown for all 19 segments (S01–S19, 10 mm each), before → after. A fix that breaks a
    neighbour segment is not a fix (regression rule in `segments.json`).
 5. **Measure, don't guess**: if a parameter effect isn't in `docs/02_PARAMETERS.md`, probe it and add the row.

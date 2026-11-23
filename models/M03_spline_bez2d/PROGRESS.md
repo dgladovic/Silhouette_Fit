@@ -1,9 +1,9 @@
 # M03_spline_bez2d — progress
 
 ## Status  (overwrite this block only)
-- State: final (kernel v3), rank 1/10
-- Best E0 (as built): front 14/19, 3/4 14/19, 16 params, score 0.706
-- Next: user decision; top 2 → Fusion build F2
+- State: ACTIVE model (chosen 2026-11-24)
+- Best E0 (as built): front 14/19, 3/4 14/19, 16 params, Fusion-verified
+- Next: segment loop: S01 rim, waist S08-S11
 
 ## Log  (append only, newest at the bottom)
 
@@ -270,3 +270,9 @@
 ### 2026-11-23 23:14 — final round (kernel v3) — results recorded (kernel v3)
 - rank 1/10, score 0.706; front 14/19, 3/4 14/19, ribs 0.43 mm, cost 72.9 (best start pool:M07_E0v2)
 - orientation offset -1.33°; MODEL.md: 'Final round — kernel v3' section appended; verified by judge/verify_e0.py
+
+### 2026-11-23 23:32 — Fusion build F2-1 verified (kernel v3)
+- generated script built in Fusion by the user (23 bodies); DumpCanvas outline vs kernel as built: mean 0.003 / max 0.007 mm -> buildability confirmed
+
+### 2026-11-23 23:33 — made the ACTIVE model (kernel v3)
+- chosen by the user 2026-11-24 (rank 1); ACTIVE_MODEL.json points here; previous active fit (M05) backed up in work/history/

@@ -157,4 +157,7 @@ Findings: base shape decides most (custom spline / rose+8θ ≫ plain rose); the
 orientation offset); twist is the most sensitive parameter; triangle count/width/height and sections mostly shift the
 outline. Still failing: S01 rim edge and parts of the waist S08–S11.
 **Not yet done:** the active fit (`fit_ribs_result.json`, Fusion scripts in the repo root) is unchanged — still M05.
-Next: Fusion build F2 of the top 2 (`fusion_runs/README.md`), then the user picks the model.
+F2 done: Fusion builds of M03 / M02 match the kernel within 0.007 / 0.21 mm. Next: the user picks the model.
+
+## 2026-11-24 — M03 is the active model
+User chose M03. `ACTIVE_MODEL.json` points to `models/M03_spline_bez2d`; Fusion script `models/M03_spline_bez2d/fusion/M03/`. Old M05 pipeline kept as reference (backup in `work/history/`). Next: segment loop on S01 and S08–S11 (docs/04).
