@@ -1,0 +1,94 @@
+Design: generative_lamp_design v1
+Units: mm
+Up axis setting (Y-up=0? Z-up=1?): 1
+
+=== CANVASES ===
+
+-- canvas 'Screenshot 2024-06-25 202822' in component 'generative_lamp_design v1'
+  imageFilename: C:/Users/Dimi/AppData/Local/Temp/Neutron/ac1ea1fc-d34a-49e6-9eb4-88216d1adfca.png
+  opacity: 50
+  isLightBulbOn: False
+  isVisible: False
+  plane origin (0.00, 0.00, 0.00) mm normal (0.0000, 0.0000, 1.0000) u (1.0000, 0.0000, -0.0000) v (-0.0000, 1.0000, 0.0000)
+  transform (adsk::core::Matrix2D): [20.531017, 0.0, -0.37443, 0.0, 12.287503, -0.55813, 0.0, 0.0, 1.0]
+  api attributes: ['assemblyContext', 'cast', 'classType', 'createForAssemblyContext', 'deleteMe', 'deriveFeature', 'entityToken', 'flipHorizontal', 'flipVertical', 'imageFilename', 'isDerived', 'isDisplayedThrough', 'isLightBulbOn', 'isRenderable', 'isSelectable', 'isValid', 'isVisible', 'name', 'nativeObject', 'objectType', 'opacity', 'planarEntity', 'plane', 'saveImage', 'this', 'thisown', 'timelineObject', 'transform']
+
+-- canvas 'Regular_Grande_24c161a9-9352-49e3-871c-fbeb202839e1_1024x1024' in component 'generative_lamp_design v1'
+  imageFilename: C:/Users/Dimi/AppData/Local/Temp/Neutron/b8c41263-53c8-4c8b-b086-55887607ff5d.jpg
+  opacity: 100
+  isLightBulbOn: False
+  isVisible: False
+  plane origin (-120.00, 0.00, 0.00) mm normal (1.0000, 0.0000, 0.0000) u (0.0000, 1.0000, 0.0000) v (0.0000, 0.0000, 1.0000)
+  transform (adsk::core::Matrix2D): [77.321484, 0.0, -21.219821, 0.0, 47.495325, -11.617969, 0.0, 0.0, 1.0]
+  api attributes: ['assemblyContext', 'cast', 'classType', 'createForAssemblyContext', 'deleteMe', 'deriveFeature', 'entityToken', 'flipHorizontal', 'flipVertical', 'imageFilename', 'isDerived', 'isDisplayedThrough', 'isLightBulbOn', 'isRenderable', 'isSelectable', 'isValid', 'isVisible', 'name', 'nativeObject', 'objectType', 'opacity', 'planarEntity', 'plane', 'saveImage', 'this', 'thisown', 'timelineObject', 'transform']
+
+-- canvas 'rel_size' in component 'generative_lamp_design v1'
+  imageFilename: C:/Users/Dimi/AppData/Local/Temp/Neutron/2d75b160-c105-4dc6-85aa-585ca07af260.jpg
+  opacity: 50
+  isLightBulbOn: True
+  isVisible: True
+  plane origin (0.00, -0.00, 60.00) mm normal (1.0000, 0.0000, 0.0000) u (-0.0000, 1.0000, 0.0000) v (0.0000, -0.0000, 1.0000)
+  transform (adsk::core::Matrix2D): [-22.67524, 0.0, 11.33762, 0.0, 26.008172, -13.004086, 0.0, 0.0, 1.0]
+  api attributes: ['assemblyContext', 'cast', 'classType', 'createForAssemblyContext', 'deleteMe', 'deriveFeature', 'entityToken', 'flipHorizontal', 'flipVertical', 'imageFilename', 'isDerived', 'isDisplayedThrough', 'isLightBulbOn', 'isRenderable', 'isSelectable', 'isValid', 'isVisible', 'name', 'nativeObject', 'objectType', 'opacity', 'planarEntity', 'plane', 'saveImage', 'this', 'thisown', 'timelineObject', 'transform']
+
+-- canvas 'rel_size 1' in component 'generative_lamp_design v1'
+  imageFilename: C:/Users/Dimi/AppData/Local/Temp/Neutron/9a1c3928-0b23-4759-91e6-6f1d744fb3f7.jpg
+  opacity: 50
+  isLightBulbOn: True
+  isVisible: True
+  plane origin (0.00, 0.00, 60.00) mm normal (-0.0000, 1.0000, 0.0000) u (1.0000, 0.0000, 0.0000) v (0.0000, 0.0000, -1.0000)
+  transform (adsk::core::Matrix2D): [-22.697104, 0.0, 11.348552, -0.0, -26.03325, 13.016625, 0.0, 0.0, 1.0]
+  api attributes: ['assemblyContext', 'cast', 'classType', 'createForAssemblyContext', 'deleteMe', 'deriveFeature', 'entityToken', 'flipHorizontal', 'flipVertical', 'imageFilename', 'isDerived', 'isDisplayedThrough', 'isLightBulbOn', 'isRenderable', 'isSelectable', 'isValid', 'isVisible', 'name', 'nativeObject', 'objectType', 'opacity', 'planarEntity', 'plane', 'saveImage', 'this', 'thisown', 'timelineObject', 'transform']
+
+-- canvas 'soft-serve-lamp-creme-atelier-stockholm_dezeen_2364_col_hero' in component 'generative_lamp_design v1'
+  imageFilename: C:/Users/Dimi/AppData/Local/Temp/Neutron/7739e91e-c605-4bd2-9428-47c51f9bf5b3.jpg
+  opacity: 100
+  isLightBulbOn: False
+  isVisible: False
+  plane origin (0.00, 0.00, 0.00) mm normal (1.0000, 0.0000, 0.0000) u (-0.0000, 1.0000, 0.0000) v (0.0000, -0.0000, 1.0000)
+  transform (adsk::core::Matrix2D): [-80.229634, 0.0, 39.37436, 0.0, 45.137651, -14.500238, 0.0, 0.0, 1.0]
+  api attributes: ['assemblyContext', 'cast', 'classType', 'createForAssemblyContext', 'deleteMe', 'deriveFeature', 'entityToken', 'flipHorizontal', 'flipVertical', 'imageFilename', 'isDerived', 'isDisplayedThrough', 'isLightBulbOn', 'isRenderable', 'isSelectable', 'isValid', 'isVisible', 'name', 'nativeObject', 'objectType', 'opacity', 'planarEntity', 'plane', 'saveImage', 'this', 'thisown', 'timelineObject', 'transform']
+
+=== BODY OUTLINE (all visible bodies in root, slice every 5 mm) ===
+bodies: 22
+bounding box min (-85.04, -0.16, 0.00) mm max (110.69, 112.78, 190.00) mm
+z_mm, maxX_mm, maxY_mm, minX_mm, minY_mm, maxRadius_mm
+0.0, 84.32, 84.32, 0.08, -0.00, 84.38
+5.0, 89.29, 89.28, 0.14, -0.14, 89.35
+10.0, 93.82, 93.84, -0.26, 0.26, 93.89
+15.0, 97.84, 97.94, -1.22, 1.22, 97.96
+20.0, 101.35, 101.56, -2.76, 6.58, 101.56
+25.0, 104.33, 104.70, -4.89, 4.89, 104.70
+30.0, 106.75, 107.33, -7.69, 7.69, 107.40
+35.0, 108.57, 109.43, -11.40, 11.40, 109.70
+40.0, 109.82, 111.00, -15.72, 20.20, 111.66
+45.0, 110.52, 112.06, -20.68, 20.68, 113.35
+50.0, 110.68, 112.59, -25.73, 25.73, 114.77
+55.0, 110.30, 112.78, -30.69, 30.69, 115.85
+60.0, 109.22, 112.47, -35.86, 35.86, 116.54
+65.0, 107.36, 111.46, -41.41, 41.41, 116.91
+70.0, 104.80, 109.78, -47.04, 52.01, 117.00
+75.0, 101.64, 107.50, -52.70, 52.70, 116.83
+80.0, 98.02, 105.17, -57.90, 57.90, 116.41
+85.0, 93.91, 102.31, -62.61, 67.49, 115.64
+90.0, 89.47, 98.67, -67.22, 67.21, 114.50
+95.0, 84.15, 94.89, -71.54, 71.53, 113.05
+100.0, 78.40, 90.70, -75.37, 75.37, 111.38
+105.0, 72.50, 90.43, -78.54, 72.50, 109.53
+110.0, 66.66, 91.37, -80.90, 66.66, 107.48
+115.0, 60.45, 91.54, -82.65, 60.45, 105.05
+120.0, 53.91, 91.42, -84.01, 53.91, 102.33
+125.0, 47.37, 90.78, -84.86, 47.37, 99.41
+130.0, 41.10, 89.59, -85.01, 41.10, 96.38
+135.0, 35.36, 88.19, -84.45, 35.36, 93.24
+140.0, 30.08, 86.12, -83.15, 30.08, 89.87
+145.0, 24.96, 83.41, -81.17, 24.96, 86.13
+150.0, 17.79, 80.21, -78.65, 20.13, 82.16
+155.0, 15.73, 76.91, -75.68, 15.74, 78.07
+160.0, 11.92, 73.30, -72.36, 11.92, 73.93
+165.0, 8.81, 69.46, -68.76, 8.81, 69.77
+170.0, 6.26, 65.32, -64.81, 6.26, 65.45
+175.0, 4.22, 60.87, -60.52, 4.22, 60.90
+180.0, 2.68, 56.10, -55.87, 2.68, 56.10
+185.0, 1.63, 51.03, -50.89, 1.63, 51.03
+190.0, 1.06, 45.71, -45.62, 1.06, 45.72
