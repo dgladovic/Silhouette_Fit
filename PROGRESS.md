@@ -102,9 +102,33 @@ python expected_triangles.py # images to compare with Fusion
   - rib spacing not uniform in arc length (e.g. equal angle, or denser near the creases);
   - section not exactly a rose: try `r = 1 + a·cos4θ + b·cos8θ` (one extra harmonic) fitted with the ribs;
   - more lobe-depth nodes (8–10) or a 7-point twist (tried once: tiny gain).
-- **Second view (3/4 perspective drawing `reference/view34_drawing.png`)** — independent check of the
-  model from another angle (see section below).
+- **Second view** — done, see "3/4 view check" below. Decide whether to apply the joint fit.
 - **Verify in Fusion** with `Grasshoper_TwoTriangles` and the original drawing as canvas (not re-scaled).
   If the canvas is re-imported or re-scaled, run DumpCanvas and update `measure_canvas.py` first.
+- The 3/4 drawing shows the base slightly off the shade axis (~1.7 mm) — the base is excluded from scoring.
+
+## 3/4 view check (`reference/view34_drawing.png`, scripts in `views/`)
+
+The drawing is a near-orthographic view from ~22° above (vertical base sides stay parallel).
+
+1. **Camera only, shape unchanged** (`python views/fit_view34.py`): fits rotation, elevation, scale,
+   position and mild perspective (camera ≈ 4.5 m away). Shade outline error: **mean 0.62 mm, 95 % 2.1 mm,
+   max 2.95 mm** (LampWall geometry). Independent confirmation that profile + twist + lobe depth are right.
+   Result: `views/view34/camera.json`, overlay `views/view34/overlay_camera_only.png`.
+2. **Joint fit to both drawings** (`python views/fit_joint.py`): front outline + 10 mm rib checkpoints +
+   3/4 outline (row-by-row edges, triangle geometry, all 4 quarters), camera free.
+
+| | Front outline max | Ribs mean / within 1 mm | 3/4 outline mean / max |
+|---|---|---|---|
+| Current scripts (front-only fit) | 0.68 mm | 0.78 mm / 74 % | 1.22 / 5.66 mm |
+| Joint fit (`views/view34/joint_result.json`) | 1.23 mm | 0.82 mm / 73 % | 0.70 / 3.32 mm |
+
+The joint fit halves the 3/4 error but loosens the front outline by ~0.5 mm, so the **scripts still use the
+front-only fit**. To switch: `python views/fit_joint.py --apply` (keeps the old one as
+`fit_ribs_result_front_only.json`). Comparison picture: `views/view34/compare_current_vs_joint.png`.
+
+Ideas: weight the two views differently (`W34` in `fit_joint.py`); the two drawings may simply not be
+100 % consistent with each other (both are illustrations).
+
 - The FulLTextureLamp script used the S-curve twist (`k1 = 0, k2 = 0.8`) on the *profile Bezier parameter*
   instead of the height; its hand-tuned angles agree with the fitted twist within ~2° at every 10 %.
