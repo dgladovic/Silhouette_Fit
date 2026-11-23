@@ -1,0 +1,46 @@
+{
+ "_doc": "Height segments of the shade (mm), 10 mm each. Single source of truth for all tools. Explained in docs/03_SEGMENTS.md. Zones are names for groups of segments, used only for talking about them.",
+ "height_mm": 190.0,
+ "segment_mm": 10.0,
+ "zones": [
+  {"name": "foot", "z0": 0.0, "z1": 30.0},
+  {"name": "lower bulge", "z0": 30.0, "z1": 80.0},
+  {"name": "waist", "z0": 80.0, "z1": 120.0},
+  {"name": "shoulder", "z0": 120.0, "z1": 160.0},
+  {"name": "neck", "z0": 160.0, "z1": 190.0}
+ ],
+ "segments": [
+  {"id": "S01", "z0": 0.0, "z1": 10.0, "zone": "foot"},
+  {"id": "S02", "z0": 10.0, "z1": 20.0, "zone": "foot"},
+  {"id": "S03", "z0": 20.0, "z1": 30.0, "zone": "foot"},
+  {"id": "S04", "z0": 30.0, "z1": 40.0, "zone": "lower bulge"},
+  {"id": "S05", "z0": 40.0, "z1": 50.0, "zone": "lower bulge"},
+  {"id": "S06", "z0": 50.0, "z1": 60.0, "zone": "lower bulge"},
+  {"id": "S07", "z0": 60.0, "z1": 70.0, "zone": "lower bulge"},
+  {"id": "S08", "z0": 70.0, "z1": 80.0, "zone": "lower bulge"},
+  {"id": "S09", "z0": 80.0, "z1": 90.0, "zone": "waist"},
+  {"id": "S10", "z0": 90.0, "z1": 100.0, "zone": "waist"},
+  {"id": "S11", "z0": 100.0, "z1": 110.0, "zone": "waist"},
+  {"id": "S12", "z0": 110.0, "z1": 120.0, "zone": "waist"},
+  {"id": "S13", "z0": 120.0, "z1": 130.0, "zone": "shoulder"},
+  {"id": "S14", "z0": 130.0, "z1": 140.0, "zone": "shoulder"},
+  {"id": "S15", "z0": 140.0, "z1": 150.0, "zone": "shoulder"},
+  {"id": "S16", "z0": 150.0, "z1": 160.0, "zone": "shoulder"},
+  {"id": "S17", "z0": 160.0, "z1": 170.0, "zone": "neck"},
+  {"id": "S18", "z0": 170.0, "z1": 180.0, "zone": "neck"},
+  {"id": "S19", "z0": 180.0, "z1": 190.0, "zone": "neck"}
+ ],
+ "targets": {
+  "sil_max_mm": 0.75,
+  "sil_bias_abs_mm": 0.3,
+  "rib_mean_mm": 0.75,
+  "rib_within_1mm_pct": 80.0,
+  "v34_mean_mm": 0.75
+ },
+ "regression_tolerance": {
+  "sil_max_mm": 0.1,
+  "rib_mean_mm": 0.1,
+  "rib_within_1mm_pct": 3.0,
+  "v34_mean_mm": 0.1
+ }
+}

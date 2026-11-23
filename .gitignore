@@ -15,3 +15,6 @@ backup_*/**/*.png
 LampWall/fit/*.png
 views/**/*.png
 !views/**/reference_*.png
+
+# Agent output images (JSON/MD results are tracked)
+work/**/*.png

@@ -6,6 +6,11 @@ matches the reference drawing (front + right view canvases) — outline **and** 
 Shade height is 190 mm (the shade only, not the base). The lamp has 4-fold symmetry (4 lobes),
 so the front and right views show the same outline.
 
+> **Reference docs** (2026-11-23): `CLAUDE.md` → `docs/01_MODEL_AND_METHODS.md` (model + fit methods),
+> `docs/02_PARAMETERS.md` (what each parameter does, incl. triangle size/count), `docs/03_SEGMENTS.md`
+> (segments S1–S5, targets, status), `docs/04_AGENT_WORKFLOW.md` (multi-agent loop, phase plan).
+> This file stays the running log + current best numbers.
+
 ---
 
 ## How the model works (same maths as the Fusion scripts)
